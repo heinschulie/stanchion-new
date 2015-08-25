@@ -550,13 +550,16 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
             <p>REG.NO. 2011/142194/07</p>
             <br />
             <p class="registered-address">REGISTERED ADDRESS</p>
-            <p>South Block, 1st Floor Avanti office Towers</p>
-            <p>35 Carl Cronje Drive, Tyger Falls Belville, 7530</p>
+            <p>
+              Office 30-23,
+              Reef Tower
+            </p>
+            <p>Jumeirah Lake Towers</p>
             <br />
-            <p>T: +27 21 461 6464 F: +27 86 619 0879</p>
+            <p>T: +971 4 4487172 F: +971 4 4487108</p>
           </div>
           <div class="col-md-6">
-            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc"></iframe>
+            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=Reef+Tower+-+Dubai+-+United+Arab+Emirates&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=Reef+Tower+-+Dubai+-+United+Arab+Emirates&amp;output=embed&amp;iwloc"></iframe>
           </div>
         </div>
         <div class="col-md-6 stanchion-address-block" data-scrollreveal="enter left after 0s over 1s" >
@@ -565,13 +568,19 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
             <p>REG.NO. 2011/142194/07</p>
             <br />
             <p class="registered-address">REGISTERED ADDRESS</p>
-            <p>South Block, 1st Floor Avanti office Towers</p>
-            <p>35 Carl Cronje Drive, Tyger Falls Belville, 7530</p>
+            <p>
+              Unit 6A,
+              The Quadrant Courtyard
+            </p>
+            <p>
+              Quadrant Way, Weybridge,
+              KT13 8DR
+            </p>
             <br />
-            <p>T: +27 21 461 6464 F: +27 86 619 0879</p>
+            <p>T: +44 203 743 9096 F: +44 203 743 9306</p>
           </div>
           <div class="col-md-6">
-            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc"></iframe>
+            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=The+Quadrant+Courtyard,+Quadrant+Way,+Weybridge,+Surrey+KT13+8DR,+UK&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=The+Quadrant+Courtyard,+Quadrant+Way,+Weybridge,+Surrey+KT13+8DR,+UK&amp;output=embed&amp;iwloc"></iframe>
           </div>
         </div>
 

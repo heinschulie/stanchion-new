@@ -5082,6 +5082,7 @@ h4.product-section-description{
 img.product-icon-small{
     width: 50px;
     float: left;
+    margin-top: 50px;
 }
 
 h5.product-section-header{
@@ -5089,6 +5090,18 @@ h5.product-section-header{
     font-weight: bolder;
     float: left;
     margin: 20px 0;
+}
+
+li.product-blog-list-item{
+    border: 1px solid red; 
+    float: left;
+}
+
+li.product-blog-list-item img{
+    border: 1px solid pink; 
+    float: left;
+    height: 100px;
+    width: auto;
 }
 
 /*Team Page*/ 

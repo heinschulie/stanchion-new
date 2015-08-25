@@ -41,12 +41,6 @@ Description: Product plugin for Batstone
         </h1>
       <?php endif; ?>
 
-      <!--<?php if( !empty($instance['slogan']) ): ?>
-        <h2 class="product-section-slogan">
-          <?php echo htmlspecialchars_decode(apply_filters('widget_slogan', $instance['slogan'])); ?>
-        </h2>
-      <?php endif; ?>-->
-
       <?php if( !empty($instance['description']) ): ?>
         <h4 class="product-section-description">
           <?php echo htmlspecialchars_decode(apply_filters('widget_description', $instance['description'])); ?>
@@ -60,8 +54,11 @@ Description: Product plugin for Batstone
       <ul class="product-whitepaper-blogs">
         <?php // Display blog posts on any page @ http://m0n.co/l
 		                $temp = $wp_query; $wp_query= null;
-		                $wp_query = new WP_Query(); 
-                    $wp_query->query('showposts=7&tag=white-paper,the_title()' . '&paged='.$paged);
+                    $args = array(
+	                    'tag' => $instance['title'],
+	                    'category_name' => 'White Paper'
+                    );
+                    $wp_query = new WP_Query( $args );
 		                while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
         <li class="product-blog-list-item">
           <a href=""
@@ -78,28 +75,18 @@ Description: Product plugin for Batstone
         <?php endwhile; ?>
       </ul>
 
-      <!--<h1 class="product-section-title">SERVICE</h1>
-      <?php if( !empty($instance['serviceslogan']) ): ?>
-        <h2 class="product-section-slogan">
-          <?php echo htmlspecialchars_decode(apply_filters('widget_slogan', $instance['serviceslogan'])); ?>
-        </h2>
-      <?php endif; ?>
-
-      <?php if( !empty($instance['servicedescription']) ): ?>
-        <h4 class="product-section-description">
-          <?php echo htmlspecialchars_decode(apply_filters('widget_description', $instance['servicedescription'])); ?>
-        </h4>
-      <?php endif; ?>-->
-
-      <img class="product-icon-small" src="http://batstone-stanchiondev.azurewebsites.net/wp-content/themes/stanchion/images/productsicon2.png" alt="Icon" />
+      <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />
 
       <h5 class="product-section-header">CASE STUDIES</h5>
 
       <ul class="product-whitepaper-blogs">
         <?php // Display blog posts on any page @ http://m0n.co/l
 		          $temp = $wp_query; $wp_query= null;
-		          $wp_query = new WP_Query(); 
-              $wp_query->query('showposts=7&tag=white-paper' . '&paged='.$paged);
+                    $args = array(
+	                    'tag' => $instance['title'],
+	                    'category_name' => 'White Paper'
+                    );
+                    $wp_query = new WP_Query( $args );
 		          while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
         <li class="product-blog-list-item">
           <a href=""

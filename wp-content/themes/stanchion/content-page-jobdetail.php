@@ -28,7 +28,7 @@
 						$zerif_jobdetail_title = get_theme_mod('zerif_jobdetail_title',__('CAREERS','stanchion'));
 					
 						if( !empty($zerif_jobdetail_title) ):
-							echo '<h2 class="stanchion-job-title">'.__($zerif_jobdetail_title,'stanchion').'</h2>';
+							echo '<h2 class="stanchion-slogan stanchion-sidepage-title">'.__($zerif_jobdetail_title,'stanchion').'</h2>';
 						endif;
 
 					echo '</div>';

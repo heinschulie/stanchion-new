@@ -42,7 +42,7 @@ Description: Product plugin for Batstone
       <?php endif; ?>
 
       <?php if( !empty($instance['description']) ): ?>
-        <p class="stanchion-bodycopy product-section-description">
+        <p class="stanchion-bodycopy">
           <?php echo htmlspecialchars_decode(apply_filters('widget_description', $instance['description'])); ?>
         </p>
       <?php endif; ?>

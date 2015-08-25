@@ -526,7 +526,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
             <p>T: +27 21 461 6464 F: +27 86 619 0879</p>
           </div>
           <div class="col-md-6">
-            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=Belville%2C+Carl+Cronje+Drive&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=Belville%2C+Carl+Cronje+Drive&amp;output=embed&amp;iwloc"></iframe>
+            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=Belville%2C+35+Carl+Cronje+Drive&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=Belville%2C+Carl+Cronje+Drive&amp;output=embed&amp;iwloc"></iframe>
           </div>
         </div>
         <div class="col-md-6 stanchion-address-block" data-scrollreveal="enter left after 0s over 1s" >
@@ -541,7 +541,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
             <p>T: +27 11 452 0116 F: +27 11 452 3679</p>
           </div>
           <div class="col-md-6">
-            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc"></iframe>
+            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=Johannesburg%2C+Greenstone+Hill+Office+Park&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=Johannesburg%2C+Greenstone+Hill+Office+Park&amp;output=embed&amp;iwloc"></iframe>
           </div>
         </div>
         <div class="col-md-6 stanchion-address-block" data-scrollreveal="enter left after 0s over 1s" >

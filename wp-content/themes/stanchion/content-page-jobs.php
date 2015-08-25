@@ -25,7 +25,7 @@
 						$zerif_ourjobs_title = get_theme_mod('zerif_ourjobs_title',__('EXPLORE. INTEGRATE. DELIVER. ','stanchion'));
 					
 						if( !empty($zerif_ourjobs_title) ):
-							echo '<h2 class="stanchion-slogan">'.__($zerif_ourjobs_title,'stanchion').'</h2>';
+							echo '<h2 class="stanchion-slogan stanchion-job-title">'.__($zerif_ourjobs_title,'stanchion').'</h2>';
 						endif;
 
 					echo '</div>';

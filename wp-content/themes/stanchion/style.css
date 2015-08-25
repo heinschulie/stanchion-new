@@ -4928,6 +4928,11 @@ p.stanchion-bodycopy {
     text-align: left;
 }
 
+.stanchion-sidepage-title{
+    color: rgb(235,94,0); 
+    font-weight: bolder; 
+    float: left; 
+}
 /*FOOTER*/
 
 .stanchion-address-block{
@@ -5146,10 +5151,7 @@ h2.stanchion-team-title{
 
 /*Jobs Page*/ 
 
-.stanchion-job-title{
-    color: rgb(235, 94, 0);
-    float: left; 
-}
+
 .job-member{
     color: rgb(99,90,87); 
     margin-bottom: 40px; 

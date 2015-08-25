@@ -36,7 +36,7 @@ Description: Product plugin for Batstone
 			?>
 
       <?php if( !empty($instance['title']) ): ?>
-        <h2 class="stanchion-slogan product-section-title">
+        <h2 class="stanchion-slogan stanchion-sidepage-title">
           <?php echo htmlspecialchars_decode(apply_filters('widget_title', $instance['title'])); ?>
         </h2>
       <?php endif; ?>

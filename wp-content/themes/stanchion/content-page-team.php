@@ -28,7 +28,7 @@
 						$zerif_ourteam_title = get_theme_mod('zerif_ourteam_title',__('OUR DIRECTORS','stanchion'));
 					
 						if( !empty($zerif_ourteam_title) ):
-							echo '<h2 class="dark-text stanchion-team-title">'.__($zerif_ourteam_title,'stanchion').'</h2>';
+							echo '<h2 class="stanchion-slogan stanchion-sidepage-title">'.__($zerif_ourteam_title,'stanchion').'</h2>';
 						endif;
 
 					echo '</div>';

@@ -7,7 +7,6 @@
     <ul class="blog-unordered-list">
       <?php // Display blog posts on any page @ http://m0n.co/l
 		    $args = array(
-	        'tag' => $instance['title'],
 	        'category_name' => 'Case Study'
         );
         $wp_query = new WP_Query( $args );
@@ -34,7 +33,6 @@
     <ul class="">
       <?php // Display blog posts on any page @ http://m0n.co/l
 		    $args = array(
-	        'tag' => $instance['title'],
 	        'category_name' => 'White Paper'
         );
         $wp_query = new WP_Query( $args );

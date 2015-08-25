@@ -266,7 +266,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 <div id="content" class="site-content">
 
   <!--A RIBBON!-->
-  <section class="howwethink" id="howwethink">
+  <section class="howwethink" id="latestnews">
     <div class="section-header separator-one" >
       <?php		    $zerif_ourfocus_title = get_theme_mod('zerif_ourfocus_title',__('LATEST NEWS','zerif-lite'));
 		

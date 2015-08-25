@@ -4923,6 +4923,11 @@ h3.stanchion-description.white-text, h2.stanchion-description.white-text, h1.sta
     color: #FFF; 
 }
 
+p.stanchion-bodycopy {
+    float: left;
+    text-align: left;
+}
+
 /*FOOTER*/
 
 .stanchion-address-block{
@@ -5057,10 +5062,7 @@ ul{
 
 /*Product Page*/ 
 
-h1.product-section-title{
-	font-size: 30px;
-	margin-top: 0;
-	padding-top: 0;
+h2.product-section-title{
     color: rgb(235,94,0); 
     font-weight: bolder; 
     float: left;

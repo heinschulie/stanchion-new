@@ -348,7 +348,9 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 		  ?>
 
-      <!--<?php		    $zerif_ourfocus_subtitle = get_theme_mod('zerif_ourfocus_subtitle',__('By giving clients the correct data, and access to Stanchion\'s decades of experience, they can make the right decisions - transforming information into action.','zerif-lite'));
+      <!--<?php
+
+		    $zerif_ourfocus_subtitle = get_theme_mod('zerif_ourfocus_subtitle',__('By giving clients the correct data, and access to Stanchion\'s decades of experience, they can make the right decisions - transforming information into action.','zerif-lite'));
 
 		    if( !empty($zerif_ourfocus_subtitle) ):
     
@@ -524,7 +526,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
             <p>T: +27 21 461 6464 F: +27 86 619 0879</p>
           </div>
           <div class="col-md-6">
-            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc"></iframe>
+            <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=Belville%2C+Carl+Cronje+Drive&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=Belville%2C+Carl+Cronje+Drive&amp;output=embed&amp;iwloc"></iframe>
           </div>
         </div>
         <div class="col-md-6 stanchion-address-block" data-scrollreveal="enter left after 0s over 1s" >
@@ -533,10 +535,10 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
             <p>REG.NO. 2011/142194/07</p>
             <br />
             <p class="registered-address">REGISTERED ADDRESS</p>
-            <p>South Block, 1st Floor Avanti office Towers</p>
-            <p>35 Carl Cronje Drive, Tyger Falls Belville, 7530</p>
+            <p>Building 1 Unit G3, Greenstone Hill Office Park</p>
+            <p>Greenstone Hill</p>
             <br />
-            <p>T: +27 21 461 6464 F: +27 86 619 0879</p>
+            <p>T: +27 11 452 0116 F: +27 11 452 3679</p>
           </div>
           <div class="col-md-6">
             <iframe class="zerif_google_map lazyloaded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc" data-lazy-src="https://maps.google.com/maps?&amp;q=New+York%2C+Leroy+Street&amp;output=embed&amp;iwloc"></iframe>

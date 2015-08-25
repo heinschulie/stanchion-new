@@ -1,9 +1,9 @@
 
 <div class="blog-container">
   <div class="col-md-6 list-item-container">
-    <h1 class="widget-title">
+    <!--<h1 class="widget-title">
       <?php _e( 'Case Studies', 'zerif-lite' ); ?>
-    </h1>
+    </h1>-->
     <ul class="blog-unordered-list">
       <?php // Display blog posts on any page @ http://m0n.co/l
 		    $args = array(
@@ -27,9 +27,9 @@
     </ul>
   </div>
   <div class="col-md-4 list-item-container">
-    <h1 class="widget-title">
+    <!--<h1 class="widget-title">
       <?php _e( 'White Papers', 'zerif-lite' ); ?>
-    </h1>
+    </h1>-->
     <ul class="">
       <?php // Display blog posts on any page @ http://m0n.co/l
 		    $args = array(
@@ -54,9 +54,9 @@
   </div>
   <div class="col-md-2 list-item-container">
     <aside id="archives" class="widget">
-      <h1 class="widget-title">
+      <!--<h1 class="widget-title">
         <?php _e( 'Archives', 'zerif-lite' ); ?>
-      </h1>
+      </h1>-->
       <ul>
         <?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
       </ul>

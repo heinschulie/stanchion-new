@@ -36,15 +36,15 @@ Description: Product plugin for Batstone
 			?>
 
       <?php if( !empty($instance['title']) ): ?>
-        <h1 class="product-section-title">
+        <h2 class="stanchion-slogan product-section-title">
           <?php echo htmlspecialchars_decode(apply_filters('widget_title', $instance['title'])); ?>
-        </h1>
+        </h2>
       <?php endif; ?>
 
       <?php if( !empty($instance['description']) ): ?>
-        <h4 class="product-section-description">
+        <p class="stanchion-bodycopy product-section-description">
           <?php echo htmlspecialchars_decode(apply_filters('widget_description', $instance['description'])); ?>
-        </h4>
+        </p>
       <?php endif; ?>
 
       <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />

@@ -28,7 +28,7 @@
 				if( !empty($zerif_aboutus_subtitle) ):
 
 
-					echo '<h2 class="stanchion-logo">';
+					echo '<h2 class="stanchion-slogan">';
 
 
 						echo __($zerif_aboutus_subtitle,'zerif-lite');
@@ -102,7 +102,7 @@
 				echo '<div class="col-lg-' . $colCount . ' col-md-' . $colCount . ' column" data-scrollreveal="enter bottom after 0s over 1s">';
 
 
-						echo '<p>';
+						echo '<p class="stanchion-bodycopy">';
 
 
 							echo __($zerif_aboutus_text,'zerif-lite');

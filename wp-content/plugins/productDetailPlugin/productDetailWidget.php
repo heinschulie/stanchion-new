@@ -55,7 +55,7 @@ Description: Product plugin for Batstone
         <?php // Display blog posts on any page @ http://m0n.co/l
 		                $temp = $wp_query; $wp_query= null;
                     $args = array(
-	                    'tag' => 'Gyrus',
+	                    'tag' => $instance['title'],
 	                    'category_name' => 'White Paper'
                     );
                     $wp_query = new WP_Query( $args );
@@ -84,7 +84,7 @@ Description: Product plugin for Batstone
 		          $temp = $wp_query; $wp_query= null;
                     $args = array(
 	                    'tag' => $instance['title'],
-	                    'category_name' => 'White Paper'
+	                    'category_name' => 'Case Study'
                     );
                     $wp_query = new WP_Query( $args );
 		          while ($wp_query->have_posts()) : $wp_query->the_post(); ?>

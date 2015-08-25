@@ -41,11 +41,11 @@ Description: Product plugin for Batstone
         </h1>
       <?php endif; ?>
 
-      <?php if( !empty($instance['slogan']) ): ?>
+      <!--<?php if( !empty($instance['slogan']) ): ?>
         <h2 class="product-section-slogan">
           <?php echo htmlspecialchars_decode(apply_filters('widget_slogan', $instance['slogan'])); ?>
         </h2>
-      <?php endif; ?>
+      <?php endif; ?>-->
 
       <?php if( !empty($instance['description']) ): ?>
         <h4 class="product-section-description">
@@ -54,7 +54,6 @@ Description: Product plugin for Batstone
       <?php endif; ?>
 
       <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />
-      <img class="left" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Indians" height="100px" />
 
       <h5 class="product-section-header">WHITE PAPERS</h5>
 
@@ -79,7 +78,7 @@ Description: Product plugin for Batstone
         <?php endwhile; ?>
       </ul>
 
-      <h1 class="product-section-title">SERVICE</h1>
+      <!--<h1 class="product-section-title">SERVICE</h1>
       <?php if( !empty($instance['serviceslogan']) ): ?>
         <h2 class="product-section-slogan">
           <?php echo htmlspecialchars_decode(apply_filters('widget_slogan', $instance['serviceslogan'])); ?>
@@ -90,7 +89,7 @@ Description: Product plugin for Batstone
         <h4 class="product-section-description">
           <?php echo htmlspecialchars_decode(apply_filters('widget_description', $instance['servicedescription'])); ?>
         </h4>
-      <?php endif; ?>
+      <?php endif; ?>-->
 
       <img class="product-icon-small" src="http://batstone-stanchiondev.azurewebsites.net/wp-content/themes/stanchion/images/productsicon2.png" alt="Icon" />
 
@@ -131,33 +130,13 @@ Description: Product plugin for Batstone
 				  $title = __( 'New title', 'product_widget_domain' );
 			  }
       
-			  if ( isset( $instance[ 'slogan' ] ) ) {
-				  $slogan = $instance[ 'slogan' ];
-			  }
-			  else {
-				  $slogan = __( 'New slogan', 'product_widget_domain' );
-			  }
-      
 			  if ( isset( $instance[ 'description' ] ) ) {
 				  $description = $instance[ 'description' ];
 			  }
 			  else {
 				  $description = __( 'New description', 'product_widget_domain' );
 			  }
-           
-			  if ( isset( $instance[ 'serviceslogan' ] ) ) {
-				  $serviceslogan = $instance[ 'serviceslogan' ];
-			  }
-			  else {
-				  $serviceslogan = __( 'New service slogan', 'product_widget_domain' );
-			  }
-      
-			  if ( isset( $instance[ 'servicedescription' ] ) ) {
-				  $servicedescription = $instance[ 'servicedescription' ];
-			  }
-			  else {
-				  $servicedescription = __( 'New description', 'product_widget_domain' );
-			  }
+         
         
 			  // Widget admin form
 			  ?>
@@ -167,27 +146,9 @@ Description: Product plugin for Batstone
 			  </p>
         <p>
           <label for=""
-            <?php echo $this->get_field_id( 'slogan' ); ?>"><?php _e( 'Slogan:' ); ?>
-          </label>
-          <input class="widefat" id=""<?php echo $this->get_field_id( 'slogan' ); ?>" name="<?php echo $this->get_field_name( 'slogan' ); ?>" type="text" value="<?php echo esc_attr( $slogan ); ?>" />
-        </p>
-        <p>
-          <label for=""
             <?php echo $this->get_field_id( 'description' ); ?>"><?php _e( 'Description:' ); ?>
           </label>
           <input class="widefat" id=""<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" type="text" value="<?php echo esc_attr( $description ); ?>" />
-        </p>
-        <p>
-          <label for=""
-            <?php echo $this->get_field_id( 'serviceslogan' ); ?>"><?php _e( 'Slogan:' ); ?>
-          </label>
-          <input class="widefat" id=""<?php echo $this->get_field_id( 'serviceslogan' ); ?>" name="<?php echo $this->get_field_name( 'service-slogan' ); ?>" type="text" value="<?php echo esc_attr( $serviceslogan ); ?>" />
-        </p>
-        <p>
-          <label for=""
-            <?php echo $this->get_field_id( 'servicedescription' ); ?>"><?php _e( 'Service Description:' ); ?>
-          </label>
-          <input class="widefat" id=""<?php echo $this->get_field_id( 'servicedescription' ); ?>" name="<?php echo $this->get_field_name( 'servicedescription' ); ?>" type="text" value="<?php echo esc_attr( $servicedescription ); ?>" />
         </p>
 
 			  <?php 
@@ -198,10 +159,7 @@ Description: Product plugin for Batstone
     
 			  $instance = array();
 			  $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-			  $instance['slogan'] = ( ! empty( $new_instance['slogan'] ) ) ? strip_tags( $new_instance['slogan'] ) : '';
 			  $instance['description'] = ( ! empty( $new_instance['description'] ) ) ? strip_tags( $new_instance['description'] ) : '';
-			  $instance['serviceslogan'] = ( ! empty( $new_instance['serviceslogan'] ) ) ? strip_tags( $new_instance['serviceslogan'] ) : '';
-			  $instance['servicedescription'] = ( ! empty( $new_instance['servicedescription'] ) ) ? strip_tags( $new_instance['servicedescription'] ) : '';
       
 			  return $instance;
 		  }

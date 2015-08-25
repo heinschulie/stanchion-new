@@ -6,9 +6,11 @@
     </h1>
     <ul class="blog-unordered-list">
       <?php // Display blog posts on any page @ http://m0n.co/l
-		    $temp = $wp_query; $wp_query= null;
-		    $wp_query = new WP_Query(); 
-        $wp_query->query('showposts=7&tag=case-study' . '&paged='.$paged);
+		    $args = array(
+	        'tag' => $instance['title'],
+	        'category_name' => 'Case Study'
+        );
+        $wp_query = new WP_Query( $args );
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <li class="blog-list-item">
         <a class="blog-image-link" href=""
@@ -31,9 +33,11 @@
     </h1>
     <ul class="">
       <?php // Display blog posts on any page @ http://m0n.co/l
-		    $temp = $wp_query; $wp_query= null;
-		    $wp_query = new WP_Query(); 
-        $wp_query->query('showposts=7&tag=white-paper' . '&paged='.$paged);
+		    $args = array(
+	        'tag' => $instance['title'],
+	        'category_name' => 'White Paper'
+        );
+        $wp_query = new WP_Query( $args );
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <li class="blog-list-item">
         <a class="blog-image-link" href=""

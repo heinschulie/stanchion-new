@@ -5101,12 +5101,10 @@ h5.product-section-header{
 }
 
 li.product-blog-list-item{
-    border: 1px solid red; 
     float: left;
 }
 
 li.product-blog-list-item img{
-    border: 1px solid pink; 
     float: left;
     height: 100px;
     width: auto;

@@ -18,8 +18,7 @@
 
 			echo '<section class="stanchion-jobdetail" id="productdetail">';
 
-				echo '<div class="container">';
-            
+				echo '<div class="container">';           
           
 					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">';
 						dynamic_sidebar( 'sidebar-productdetail' );

@@ -61,8 +61,7 @@ Description: Product plugin for Batstone
                     $wp_query = new WP_Query( $args );
 		                while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
         <li class="product-blog-list-item">
-          <a href=""
-            <?php the_permalink(); ?>" title="Read more">
+          <a href="<?php the_permalink(); ?>" title="Read more">
             <?php the_post_thumbnail(); ?>
           </a>
           <div class="col-md-9 post-text">
@@ -89,8 +88,7 @@ Description: Product plugin for Batstone
                     $wp_query = new WP_Query( $args );
 		          while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
         <li class="product-blog-list-item">
-          <a href=""
-            <?php the_permalink(); ?>" title="Read more">
+          <a href="<?php the_permalink(); ?>" title="Read more">
             <?php the_post_thumbnail(); ?>
           </a>
           <div class="col-md-9 post-text">

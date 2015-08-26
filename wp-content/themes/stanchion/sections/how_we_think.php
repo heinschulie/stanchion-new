@@ -14,10 +14,25 @@
                 
         while ($wp_query->have_posts()) : 
             $wp_query->the_post();
-            echo '<h2><a href="'.the_permalink().'">'.the_title().'</a></h2>';
+            
             if ($loop->current_post == 0) {
-                  echo the_post_thumbnail();
+                echo <li class="blog-list-item">;
+                  echo '<h2><a href="'.the_permalink().'">'.the_title().'</a></h2>';
+                  echo the_post_thumbnail('large');
+                  echo the_post_thumbnail('medium');
                   echo the_excerpt();
+                echo </li>;
+            }
+            else {
+              echo <li class="blog-list-item">
+                echo <a class="blog-image-link" href="'.the_permalink().'" title="Read more">
+                   echo the_post_thumbnail(); 
+                echo </a>
+                echo <div class="col-md-8 post-text">
+                  echo <h5> the_title(); </h5>
+                  echo the_excerpt(); 
+                echo </div>
+              echo </li>
             }
         endwhile; wp_reset_postdata();
         

@@ -5011,8 +5011,8 @@ ul{
     .list-item-container{
         position:relative;
         border-right: 1px solid lightgray;
-            padding-right: 40px;
-            padding-left: 0;
+        padding-right: 40px;
+        padding-left: 0;
     }
 
     ul.blog-unordered-list{

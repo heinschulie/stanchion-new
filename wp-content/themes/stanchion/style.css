@@ -5046,6 +5046,7 @@ ul{
     }
 
     li.blog-list-item img{
+      padding-top: 5px;
       width: 20%;
       float: left;
     }

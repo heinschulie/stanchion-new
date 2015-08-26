@@ -16,34 +16,29 @@
           <?php the_permalink(); ?>" title="Read more">
           <?php 
                   if ($wp_query->current_post == 0) {
-                    echo the_post_thumbnail('large');
-                    echo the_excerpt();
-                    echo '<h1>';
-                    echo 'YOWZER';
-                    echo '</h1>';
+                    the_post_thumbnail('large');                   
                   }  
                   else{
-                    echo 'LOSER';
+                    the_post_thumbnail();
                   }
               ?>
-          <!--<?php the_post_thumbnail(); ?>-->
         </a>
         <div class="col-md-8 post-text">
-          <h5>
-            <?php 
+          <?php 
             
               if ($wp_query->current_post == 0) {
-                echo '<h1>';
+                echo '<h2>';
                   the_title();
-                echo '</h1>';
+                echo '</h2>';
               }  
               else{
-                echo 'WHAHOO';
+                echo '<h5>';
+                  the_title();
+                echo '</h5>';
               }
                       
-            ?>
-          </h5>
-          <!--<?php the_excerpt(); ?>-->
+          ?>
+          <?php the_excerpt(); ?>
         </div>
       </li>
       <?php endwhile; ?>

@@ -5065,8 +5065,7 @@ ul{
 
     ul.blog-unordered-list li.blog-list-item:first-child div.post-text{
       width: 100%;
-      position: relative;
-      float: none;
+      padding-left: 0;
     }
 }
 

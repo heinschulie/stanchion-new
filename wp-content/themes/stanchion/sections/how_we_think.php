@@ -4,52 +4,48 @@
     <!--<h1 class="widget-title">
       <?php _e( 'Case Studies', 'zerif-lite' ); ?>
     </h1>-->
-    <ul class="blog-unordered-list">
-      
+    <ul class="">
       <?php // Display blog posts on any page @ http://m0n.co/l
 		    $args = array(
 	        'category_name' => 'Case Study'
         );
         $wp_query = new WP_Query( $args );
-                
-        while ($wp_query->have_posts()) : 
-            $wp_query->the_post();
-            
-            if ($loop->current_post == 0) {
-                echo <li class="blog-list-item">;
-                  echo '<h2><a href="'.the_permalink().'">'.the_title().'</a></h2>';
-                  echo the_post_thumbnail('large');
-                  echo the_post_thumbnail('medium');
-                  echo the_excerpt();
-                echo </li>;
-            }
-            else {
-              echo <li class="blog-list-item">
-                echo <a class="blog-image-link" href="'.the_permalink().'" title="Read more">
-                   echo the_post_thumbnail(); 
-                echo </a>
-                echo <div class="col-md-8 post-text">
-                  echo <h5> the_title(); </h5>
-                  echo the_excerpt(); 
-                echo </div>
-              echo </li>
-            }
-        endwhile; wp_reset_postdata();
-        
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-      <!--<li class="blog-list-item">
+      <li class="blog-list-item">
         <a class="blog-image-link" href=""
           <?php the_permalink(); ?>" title="Read more">
-          <?php the_post_thumbnail(); ?>
+          <?php 
+                  if ($wp_query->current_post == 0) {
+                    echo the_post_thumbnail('large');
+                    echo the_excerpt();
+                    echo '<h1>';
+                    echo 'YOWZER';
+                    echo '</h1>';
+                  }  
+                  else{
+                    echo 'LOSER';
+                  }
+              ?>
+          <!--<?php the_post_thumbnail(); ?>-->
         </a>
         <div class="col-md-8 post-text">
           <h5>
-            <?php the_title(); ?>
+            <?php 
+            
+              if ($wp_query->current_post == 0) {
+                echo '<h1>';
+                  the_title();
+                echo '</h1>';
+              }  
+              else{
+                echo 'WHAHOO';
+              }
+                      
+            ?>
           </h5>
-          <?php the_excerpt(); ?>
+          <!--<?php the_excerpt(); ?>-->
         </div>
-      </li>-->
+      </li>
       <?php endwhile; ?>
     </ul>
   </div>

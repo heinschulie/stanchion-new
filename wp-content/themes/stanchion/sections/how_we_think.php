@@ -4,7 +4,7 @@
     <!--<h1 class="widget-title">
       <?php _e( 'Case Studies', 'zerif-lite' ); ?>
     </h1>-->
-    <ul class="">
+    <ul class="blog-unordered-list">
       <?php // Display blog posts on any page @ http://m0n.co/l
 		    $args = array(
 	        'category_name' => 'Case Study'
@@ -27,9 +27,9 @@
           <?php 
             
               if ($wp_query->current_post == 0) {
-                echo '<h2>';
+                echo '<h3>';
                   the_title();
-                echo '</h2>';
+                echo '</h3>';
               }  
               else{
                 echo '<h5>';

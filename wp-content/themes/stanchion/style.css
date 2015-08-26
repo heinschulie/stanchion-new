@@ -5043,7 +5043,7 @@ ul{
     }
 
     li.blog-list-item img{
-      width: 30%;
+      width: 20%;
       float: left;
     }
 
@@ -5057,6 +5057,7 @@ ul{
       height: 100%; 
       position: relative;
       float: none;
+      margin-bottom:  20px;
     }
 
     ul.blog-unordered-list li.blog-list-item:first-child div.post-text{

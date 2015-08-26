@@ -4,8 +4,6 @@
 	
 	if( !empty($zerif_total_posts) && ($zerif_total_posts > 0) ):
 	
-		
-		
 			echo '<div class="container">';
 
 				echo '<div class="clear"></div>';

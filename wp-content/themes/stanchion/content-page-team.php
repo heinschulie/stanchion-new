@@ -25,7 +25,7 @@
 					echo '<div class="section-header">';
 
 
-						$zerif_ourteam_title = get_theme_mod('zerif_ourteam_title',__('OUR DIRECTORS','stanchion'));
+						$zerif_ourteam_title = get_theme_mod('zerif_ourteam_title',__('Our Directors','stanchion'));
 					
 						if( !empty($zerif_ourteam_title) ):
 							echo '<h2 class="stanchion-slogan stanchion-sidepage-title">'.__($zerif_ourteam_title,'stanchion').'</h2>';

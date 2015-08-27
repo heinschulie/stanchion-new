@@ -4896,6 +4896,7 @@ h5.stanchion-header {
     font-weight: bolder;
 	margin-bottom: 15px;
 	padding-top: 0;
+    text-align: center;
 }
 
 h6.stanchion-header.white-text, h5.stanchion-header.white-text, h4.stanchion-header.white-text,
@@ -4999,7 +5000,7 @@ p.stanchion-bodycopy {
 }
 .whatwedobox-inner{
     border-radius: 15px;
-    min-height: 120px; 
+    min-height: 140px; 
     width:100%; 
     background-color: white; 
     text-align: left; 
@@ -5110,6 +5111,10 @@ ul{
 }
 
 /*Product Page*/ 
+
+ul.product-blog-list{
+    margin-left: 0;
+}
 
 h2.product-section-title{
     color: rgb(235,94,0); 

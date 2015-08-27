@@ -51,7 +51,7 @@ Description: Product plugin for Batstone
 
       <h5 class="product-section-header">WHITE PAPERS</h5>
 
-      <ul class="product-whitepaper-blogs">
+      <ul class="product-blog-list">
         <?php // Display blog posts on any page @ http://m0n.co/l
 		                $temp = $wp_query; $wp_query= null;
                     $args = array(
@@ -78,7 +78,7 @@ Description: Product plugin for Batstone
 
       <h5 class="product-section-header">CASE STUDIES</h5>
 
-      <ul class="product-whitepaper-blogs">
+      <ul class="product-blog-list">
         <?php // Display blog posts on any page @ http://m0n.co/l
 		          $temp = $wp_query; $wp_query= null;
                     $args = array(
@@ -87,17 +87,17 @@ Description: Product plugin for Batstone
                     );
                     $wp_query = new WP_Query( $args );
 		          while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-        <li class="product-blog-list-item">
-          <a href="<?php the_permalink(); ?>" title="Read more">
-            <?php the_post_thumbnail(); ?>
-          </a>
-          <div class="col-md-9 post-text">
-            <h5>
-              <?php the_title(); ?>
-            </h5>
-            <?php the_excerpt(); ?>
-          </div>
-        </li>
+          <li class="product-blog-list-item">
+            <a href="<?php the_permalink(); ?>" title="Read more">
+              <?php the_post_thumbnail(); ?>
+            </a>
+            <div class="col-md-9 post-text">
+              <h5>
+                <?php the_title(); ?>
+              </h5>
+              <?php the_excerpt(); ?>
+            </div>
+          </li>
         <?php endwhile; ?>
       </ul>
 

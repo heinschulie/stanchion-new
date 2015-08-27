@@ -686,12 +686,12 @@ a {
 	color: #e96656;
 }
 a:visited {
-	color: #e96656;
+	color: rgb(235,94,0);
 }
 a:hover,
 a:focus,
 a:active {
-	color: #cb4332;
+	color: rgb(235,94,0);
 }
 /*---------------------------------------
  **   5.2 Menus                  -----

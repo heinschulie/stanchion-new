@@ -5025,7 +5025,7 @@ p.stanchion-bodycopy {
 
 ul{
     list-style: none;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.5em 3em;
 }
 
 @media screen and (min-width: 768px) {	
@@ -5200,11 +5200,9 @@ h2.stanchion-team-title{
 
 
 /*Clearfix hack : http://nicolasgallagher.com/micro-clearfix-hack/ */
-
 .job-box {
     padding-left: 0;
 }
-
 .job-member{
     color: rgb(99,90,87); 
     margin-bottom: 40px; 

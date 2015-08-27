@@ -52,8 +52,8 @@ Description: This is the job listing widget
 					</p>
 				<?php endif; ?>
 				<?php if( !empty($instance['link']) ): ?>
-					<a href="<?php echo htmlspecialchars_decode(apply_filters('widget_link', $instance['link'])); ?>" class="btn btn-primary custom-button orange-btn">
-            Read More CMON MAN
+					<a href="<?php echo htmlspecialchars_decode(apply_filters('widget_link', $instance['link'])); ?>" class="btn btn-primary custom-button job-listing-button orange-btn">
+            Read More
           </a>
 				<?php endif; ?>
 

@@ -4873,6 +4873,11 @@ img.stanchion-landing-logo{
 	background-color: grey;
 }
 
+.job-listing-button{
+    float: left;
+    margin: 0;
+}
+
 .contact-us .success p {
 	background: rgb(227,122,38);
 }

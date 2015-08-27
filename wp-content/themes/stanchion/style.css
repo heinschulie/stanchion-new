@@ -1884,8 +1884,8 @@ ul.nav > li.current_page_item.current > a:before {
  **   Secction:  Separator one        -----
 -----------------------------------------*/
 .separator-one {
-	background: rgba(235, 94, 0, 0.6);
-	padding: 75px 0 0 0;
+	background: rgba(235, 94, 0, 0.9);
+	padding: 55px 0 0 0;
 }
 .separator-one .green-btn {
 	background: #14a168;
@@ -4874,13 +4874,14 @@ h3.stanchion-slogan.main-slogan{
 
 h6.stanchion-header, h5.stanchion-header, h4.stanchion-header,
 h3.stanchion-header, h2.stanchion-header, h1.stanchion-header {
-    color: orange;
+    color: rgb(235,94,0);
     font-weight: bolder; 
 }
 
 h5.stanchion-header {
-	font-size: 18px;
-	margin-bottom: 0;
+	font-size: 32px;
+    font-weight: bolder;
+	margin-bottom: 15px;
 	padding-top: 0;
 }
 
@@ -4914,6 +4915,7 @@ h3.stanchion-description, h2.stanchion-description, h1.stanchion-description {
 }
 
 h4.stanchion-description{
+    margin-top:25px;
     font-size: 24px;
 }
 
@@ -4972,7 +4974,7 @@ p.stanchion-bodycopy {
     margin-bottom: 15px;
 }
 .whatwedobox-inner{
-    border-radius: 5px;
+    border-radius: 15px;
     min-height: 120px; 
     width:100%; 
     background-color: white; 
@@ -4988,6 +4990,7 @@ p.stanchion-bodycopy {
 .whatwedobox-inner h4{
     color: rgb(235, 94, 0); 
     margin-bottom: 0; 
+    font-weight: bolder;
 } 
 
 /*HOW WE THINK*/

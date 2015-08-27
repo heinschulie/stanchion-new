@@ -4941,6 +4941,7 @@ h3.stanchion-description.white-text, h2.stanchion-description.white-text, h1.sta
 p.stanchion-bodycopy {
     float: left;
     text-align: left;
+    font-size: 14px;
 }
 
 .stanchion-sidepage-title{
@@ -5025,6 +5026,7 @@ p.stanchion-bodycopy {
 
 ul{
     list-style: none;
+    margin: 0 0 1.5em 0;
 }
 
 @media screen and (min-width: 768px) {	
@@ -5097,11 +5099,13 @@ ul{
     }
 
     .post-text h3, h5{
-        font-weight: bolder; 
+        font-weight: bolder;
+        float: left;  
     }
-    .post-text p{
-        font-size: 14px; 
-    }
+    .post-text p {
+    font-size: 14px;
+    text-align: left;
+}
 }
 
 /*Product Page*/ 
@@ -5140,6 +5144,7 @@ h5.product-section-header{
 
 li.product-blog-list-item{
     float: left;
+    width: 100%;
 }
 
 li.product-blog-list-item img{
@@ -5189,6 +5194,7 @@ h2.stanchion-team-title{
 /*Jobs Page*/ 
 
 
+/*Clearfix hack : http://nicolasgallagher.com/micro-clearfix-hack/ */
 .job-member{
     color: rgb(99,90,87); 
     margin-bottom: 40px; 

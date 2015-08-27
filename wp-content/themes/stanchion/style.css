@@ -5003,7 +5003,7 @@ p.stanchion-bodycopy {
     width:100%; 
     background-color: white; 
     text-align: left; 
-    padding: 5px;
+    padding: 15px;
     -webkit-transition: all 500ms;
 	transition: all 500ms; 
     cursor: pointer;
@@ -5069,7 +5069,7 @@ ul{
 
     li.blog-list-item p{
       line-height:1em;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     li.blog-list-item img{
@@ -5327,7 +5327,7 @@ h2.stanchion-team-title{
 
 /*----  STANCHION SECTION:  About Us   ----*/
 
-#about-us .stanchion-bodycopy{
+.aboutus .stanchion-bodycopy{
     margin-top: -40px;
 }
 

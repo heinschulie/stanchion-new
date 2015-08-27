@@ -4958,6 +4958,11 @@ p.stanchion-bodycopy {
     text-transform: uppercase;
     float: left; 
 }
+
+.project-details h5 {	
+    text-align: center;
+}
+
 /*FOOTER*/
 
 .stanchion-address-block{
@@ -4970,9 +4975,6 @@ p.stanchion-bodycopy {
     font-size: 12px; 
     margin: 0; 
 }
-/*.stanchion-address-block iframe{
-    height: 200px; 
-}*/
 
 .address-header{
     font-weight: bolder;
@@ -5246,7 +5248,7 @@ h2.stanchion-team-title{
 
 .job-member h4{   
     color: rgb(235,94,0); 
-    font-weight: bolder;
+    font-weight: normal;
     float: left;
 }
 

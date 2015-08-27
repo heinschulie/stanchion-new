@@ -22,7 +22,7 @@
 
 					echo '<div class="section-header">';
 
-						$zerif_ourjobs_title = get_theme_mod('zerif_ourjobs_title',__('EXPLORE. INTEGRATE. DELIVER. ','stanchion'));
+						$zerif_ourjobs_title = get_theme_mod('zerif_ourjobs_title',__('Explore. Integrate. Deliver. ','stanchion'));
 					
 						if( !empty($zerif_ourjobs_title) ):
 							echo '<h2 class="stanchion-slogan stanchion-sidepage-title">'.__($zerif_ourjobs_title,'stanchion').'</h2>';

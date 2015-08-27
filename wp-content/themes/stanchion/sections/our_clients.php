@@ -38,11 +38,9 @@
 
                   </h5>
 
-                  <div class="details white-text">
-
+                  <!--<div class="details white-text">
                     Read More...
-
-                  </div>
+                  </div>-->
 
                 </div>
 
@@ -68,9 +66,10 @@
                   <h5 class="white-text orange-border-bottom">
                     Woolworths
                   </h5>
-                  <div class="details white-text">
+                  
+                  <!--<div class="details white-text">
                     Read more...
-                  </div>
+                  </div>-->
 
                 </div>
 
@@ -102,11 +101,9 @@
 
                   </h5>
 
-                  <div class="details white-text">
-
+                  <!--<div class="details white-text">
                     Read More...
-
-                  </div>
+                  </div>-->
 
                 </div>
 
@@ -138,11 +135,9 @@
 
                   </h5>
 
-                  <div class="details white-text">
-
+                  <!--<div class="details white-text">
                     Read More...
-
-                  </div>
+                  </div>-->
 
                 </div>
 
@@ -168,16 +163,12 @@
                 <div class="project-details">
 
                   <h5 class="white-text orange-border-bottom">
-
                     Mashreq
-
                   </h5>
 
-                  <div class="details white-text">
-
+                  <!--<div class="details white-text">
                     Read More...
-
-                  </div>
+                  </div>-->
 
                 </div>
 
@@ -208,11 +199,9 @@
 
                   </h5>
 
-                  <div class="details white-text">
-
+                  <!--<div class="details white-text">
                     Read More...
-
-                  </div>
+                  </div>-->
 
                 </div>
 
@@ -248,12 +237,9 @@
                   </h5>
 
 
-                  <div class="details white-text">
-
-
+                  <!--<div class="details white-text">
                     Read More...
-
-                  </div>
+                  </div>-->
 
 
                 </div>
@@ -298,14 +284,9 @@
 
                   </h5>
 
-
-                  <div class="details white-text">
-
-
+                  <!--<div class="details white-text">
                     Read More...
-
-                  </div>
-
+                  </div>-->
 
                 </div>
 
@@ -336,11 +317,9 @@
                     Coles
 
                   </h5>
-                  <div class="details white-text">
-
+                  <!--<div class="details white-text">
                     Read More...
-
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </a>
@@ -359,9 +338,9 @@
                   <h5 class="white-text orange-border-bottom">
                     Bank Muscat
                   </h5>
-                  <div class="details white-text">
+                  <!--<div class="details white-text">
                     Read More...
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </a>
@@ -379,9 +358,9 @@
                   <h5 class="white-text orange-border-bottom">
                     ACI Payment Solutions
                   </h5>
-                  <div class="details white-text">
+                  <!--<div class="details white-text">
                     Read More...
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </a>
@@ -399,9 +378,9 @@
                   <h5 class="white-text orange-border-bottom">
                     American Express 
                   </h5>
-                  <div class="details white-text">
+                  <!--<div class="details white-text">
                     Read More...
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </a>

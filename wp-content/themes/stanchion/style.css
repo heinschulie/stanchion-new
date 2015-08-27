@@ -301,9 +301,6 @@ h6 {
 .red-btn {
 	background: rgb(235,94,0);
 }
-.orange-btn {
-	background: rgb(227,122,38);
-}
 .green-btn {
 	background: #20AA73;
 }
@@ -1969,7 +1966,7 @@ ul.nav > li.current_page_item.current > a:before {
 	top: 10px;
 	right: 10px;
 	bottom: 10px;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.8);
 	padding-top: 25%;
 	text-align: center;
 	filter: alpha(opacity=0);
@@ -2218,6 +2215,7 @@ ul.nav > li.current_page_item.current > a:before {
 	color: #d1d1d1;
 	margin-top: 15px;
 }
+
 /*---------------------------------------
  **   Section: Our team;              -----
 -----------------------------------------*/
@@ -4858,6 +4856,21 @@ body.custom-background {
 
 /*STANCHION*/
 
+/* Buttons */
+
+.orange-btn {
+	background: rgb(227,122,38);
+}
+.orange-btn:hover {
+	background-color: grey;
+}
+
+.contact-us .success p {
+	background: rgb(227,122,38);
+}
+
+/* End Buttons */
+
 h2.stanchion-slogan.main-header{
     color: rgb(235,94,0);
 }
@@ -4948,11 +4961,12 @@ p.stanchion-bodycopy {
     font-size: 12px; 
     margin: 0; 
 }
-.stanchion-address-block iframe{
+/*.stanchion-address-block iframe{
     height: 200px; 
-}
+}*/
 
 .address-header{
+    font-weight: bolder;
     color: orange;
 }
 
@@ -4960,9 +4974,19 @@ p.stanchion-bodycopy {
     font-weight: bold; 
 }
 
+.stanchion-google-map iframe {
+    height: 200px; 
+    width:100%;
+    border:0;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+	  -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+	  -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+}
+
+
 #footer {
 	border-bottom: solid grey 75px;
-    border-top: dotted grey 2px;
 }
  
 /*WHAT WE DO SECTION*/
@@ -5070,6 +5094,13 @@ ul{
     ul.blog-unordered-list li.blog-list-item:first-child div.post-text{
       width: 100%;
       padding-left: 0;
+    }
+
+    .post-text h3, h5{
+        font-weight: bolder; 
+    }
+    .post-text p{
+        font-size: 14px; 
     }
 }
 
@@ -5269,9 +5300,10 @@ h2.stanchion-team-title{
     font-weight: bolder;
     float: left;
 }
-/**
+/*
 
 /*----  STANCHION SECTION:  HOME > LATEST NEWS   ----*/
+
 .latest-news {
 	padding-bottom: 66px;
 	padding-top: 100px;
@@ -5292,5 +5324,12 @@ h2.stanchion-team-title{
     font-weight: 700;
     display: block;
 }
+
+/*----  STANCHION SECTION:  About Us   ----*/
+
+#about-us .stanchion-bodycopy{
+    margin-top: -40px;
+}
+
 
 /*STANCHION*/

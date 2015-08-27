@@ -49,6 +49,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
 	background: #fff;
+    background-size: 100% !important;
 }
 article,
 aside,

@@ -52,9 +52,9 @@ Description: This is the job listing widget
 					</p>
 				<?php endif; ?>
 				<?php if( !empty($instance['link']) ): ?>
-					<a href="<?php echo htmlspecialchars_decode(apply_filters('widget_link', $instance['link'])); ?>" class="btn btn-primary btn-stanchion">
-					  Read More
-					</a>
+					<a href="<?php echo htmlspecialchars_decode(apply_filters('widget_link', $instance['link'])); ?>" class="btn btn-primary custom-button orange-btn">
+            Read More
+          </a>
 				<?php endif; ?>
 
 			  </div>

@@ -4946,7 +4946,6 @@ p.stanchion-bodycopy {
 
 .stanchion-sidepage-title{
     color: rgb(235,94,0); 
-    font-weight: bolder; 
     text-transform: uppercase;
     float: left; 
 }
@@ -5105,9 +5104,9 @@ ul{
         text-align: left; 
     }
     .post-text p {
-    font-size: 14px;
-    text-align: left;
-}
+        font-size: 14px;
+        text-align: left;
+    }
 }
 
 /*Product Page*/ 
@@ -5157,6 +5156,10 @@ li.product-blog-list-item img{
 
 /*Team Page*/ 
 
+.stanchion-team-container{
+    margin-top: 50px;
+}
+
 .stanchion-team .team-member .profile-pic{
     border-radius: 0; 
     height: auto;
@@ -5197,6 +5200,11 @@ h2.stanchion-team-title{
 
 
 /*Clearfix hack : http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.job-box {
+    padding-left: 0;
+}
+
 .job-member{
     color: rgb(99,90,87); 
     margin-bottom: 40px; 

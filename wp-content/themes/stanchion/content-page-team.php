@@ -33,7 +33,7 @@
 
 					echo '</div>';
 
-					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">';
+					echo '<div class="row stanchion-team-container" data-scrollreveal="enter left after 0s over 0.8s">';
 						dynamic_sidebar( 'sidebar-ourteam' );
 					echo '</div> ';
 

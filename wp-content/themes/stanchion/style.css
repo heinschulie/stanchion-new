@@ -4856,6 +4856,14 @@ body.custom-background {
 
 /*STANCHION*/
 
+img.stanchion-landing-logo{
+    position: relative;
+    margin-top: -12.5%;
+    margin-bottom: 5%;
+    width: 20%;
+}
+
+
 /* Buttons */
 
 .orange-btn {

@@ -92,7 +92,7 @@ function zerif_setup()
 
         'default-color' => 'ffffff',
 
-        'default-image' => get_stylesheet_directory_uri() . "/images/bg.jpg",
+        'default-image' => get_stylesheet_directory_uri() . "/images/bg-1.jpg",
 
     )));
 

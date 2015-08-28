@@ -4966,7 +4966,7 @@ p.stanchion-bodycopy {
 
 .stanchion-sidepage-title{
     color: rgb(235,94,0); 
-    text-transform: uppercase;
+    text-transform: capitalize;
     float: left; 
 }
 

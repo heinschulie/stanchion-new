@@ -138,7 +138,7 @@ endif; ?>
 			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation">
 
 				<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list initial-navlist" >
-					<li class="page_item page-item-12"><a href="<?php the_permalink() ?>/#whatwedo">What We Do</a></li>
+					<li class="page_item page-item-12"><a href="<?php site_url('/#whatwedo') ?>">What We Do</a></li>
 					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/#results">Results</a></li>
 					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/#clients">Clients</a></li>
 					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/#howwethink">How We Think</a></li>

@@ -4872,6 +4872,11 @@ img.stanchion-landing-logo{
     width: 20%;
 }
 
+@media screen and (max-width: 414px) {
+    img.stanchion-landing-logo{
+        width: 45%;
+    }
+}
 
 /* Buttons */
 
@@ -4910,6 +4915,17 @@ h3.stanchion-slogan.main-slogan{
     line-height: 1.2em;
     color: darkgrey;
     text-align: justify;
+}
+
+@media screen and (max-width: 414px) {
+    h2.stanchion-slogan.main-header{
+        color: rgb(235,94,0);
+        font-weight: bolder;
+        font-size: 30px !important;
+    }
+    h3.stanchion-slogan.main-slogan {
+        font-size: 28px;
+    }
 }
 
 h6.stanchion-header, h5.stanchion-header, h4.stanchion-header,

@@ -4925,6 +4925,7 @@ h3.stanchion-slogan.main-slogan{
     }
     h3.stanchion-slogan.main-slogan {
         font-size: 28px;
+        text-align: center;
     }
 }
 
@@ -5350,7 +5351,7 @@ h2.stanchion-team-title{
 
 .job-detail .member-details .detailitem{
     color: rgb(99, 90, 87);
-    line-height: 0.1em;
+    margin: 0;
 }
 
 .job-detail .member-details p.detailitem em{

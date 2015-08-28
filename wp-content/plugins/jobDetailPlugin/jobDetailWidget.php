@@ -35,7 +35,7 @@ Description: Test Plugin for Batstone
 
 			?>
 
-			<div class="col-lg-12 col-sm-3 job-box">
+			<div class="col-lg-12 col-sm-12 job-box">
 			  <div class="job-detail">
 				  <div class="member-details">
 				    <?php if( !empty($instance['title']) ): ?>

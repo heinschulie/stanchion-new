@@ -5210,6 +5210,7 @@ h5.product-section-header{
 li.product-blog-list-item{
     float: left;
     width: 100%;
+    margin-top: 10px;
 }
 
 li.product-blog-list-item img{

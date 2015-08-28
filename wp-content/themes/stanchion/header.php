@@ -138,14 +138,14 @@ endif; ?>
 			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation">
 
 				<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list initial-navlist" >
-					<li class="page_item page-item-12"><a href="<?php site_url() ?>/#whatwedo">What We Do</a></li>
-					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/#results">Results</a></li>
-					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/#clients">Clients</a></li>
-					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/#howwethink">How We Think</a></li>
-					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/#aboutus">About Us</a></li>	
-					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/careers/">Careers</a></li>
-					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/team/">Team</a></li>
-					<li class="page_item page-item-12"><a href="http://batstone-stanchiondev.azurewebsites.net/#contact">Contact</a></li>	
+					<li class="page_item page-item-12"><a href="/#whatwedo">What We Do</a></li>
+					<li class="page_item page-item-12"><a href="/#results">Results</a></li>
+					<li class="page_item page-item-12"><a href="/#clients">Clients</a></li>
+					<li class="page_item page-item-12"><a href="/#howwethink">How We Think</a></li>
+					<li class="page_item page-item-12"><a href="/#aboutus">About Us</a></li>	
+					<li class="page_item page-item-12"><a href="/careers/">Careers</a></li>
+					<li class="page_item page-item-12"><a href="/team/">Team</a></li>
+					<li class="page_item page-item-12"><a href="/#contact">Contact</a></li>	
 					<li><a target="_blank" href="'.esc_url(__($zerif_socials_twitter,'zerif-lite')).'"><i class="fa fa-twitter"></i></a></li>	
 					<li><a target="_blank" href="'.esc_url(__($zerif_socials_linkedin,'zerif-lite')).'"><i class="fa fa-linkedin"></i></a></li>				
 				</ul>

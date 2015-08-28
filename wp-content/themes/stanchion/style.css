@@ -5176,8 +5176,7 @@ li.product-blog-list-item{
 
 li.product-blog-list-item img{
     float: left;
-    height: 100px;
-    width: auto;
+    width: 150px;
 }
 
 /*Team Page*/ 

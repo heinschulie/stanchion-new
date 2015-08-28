@@ -18,7 +18,7 @@ Description: Test Plugin for Batstone
 			__('Job Detail', 'job_widget_domain'), 
 
 			// Widget description
-			array( 'description' => __( 'Sample widget based on WPBeginner Tutorial', 'job_widget_domain' ), ) 
+			array( 'description' => __( 'Stanchion opportunity described in detail.', 'job_widget_domain' ), ) 
 			);
 		}
 

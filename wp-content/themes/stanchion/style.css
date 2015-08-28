@@ -52,6 +52,13 @@ body {
     background-size: 100% !important;
     background-image: url(images/bg-1.jpg);
 }
+
+@media screen and (max-width: 414px) {
+    body {
+        background-size: cover !important;
+    }
+}
+
 article,
 aside,
 details,
@@ -1770,7 +1777,7 @@ ul.nav > li.current_page_item.current > a:before {
 }
 .focus {
 	padding-bottom: 100px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	/*background: #FFFFFF;*/
 }
 .focus .row {

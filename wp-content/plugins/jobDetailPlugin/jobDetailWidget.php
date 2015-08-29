@@ -261,8 +261,7 @@ Description: Test Plugin for Batstone
 			  <input class="widefat" id="<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" type="text" value="<?php echo esc_attr( $description ); ?>" />
 			</p>
       <p>
-        <label for=""
-          <?php echo $this->get_field_id( 'functions' ); ?>"><?php _e( 'Functions:' ); ?>
+        <label for="<?php echo $this->get_field_id( 'functions' ); ?>"><?php _e( 'Functions:' ); ?>
         </label>
         <p class="widefat" id="<?php echo $this->get_field_id( 'functions' ); ?>" name="<?php echo $this->get_field_name( 'functions' ); ?>" type="text" value="<?php echo esc_attr( $functions ); ?>" />
       </p>

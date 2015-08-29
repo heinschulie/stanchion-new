@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Job Detail Widget
-Description: Test Plugin for Batstone 
+Description: Plugin for Stanchion 
 */
 /* Start Adding Functions Below this Line */
 
@@ -105,9 +105,17 @@ Description: Test Plugin for Batstone
           <div class="member-details">
             <br />
             <?php if( !empty($instance['functions']) ): ?>
-            <p class="details">
+            <ul>
+            <?php       
+              $myArray = explode(',', $instance['functions']);
+              foreach($myArray as $key => $item) {
+                  echo '<li>', $item, '</li>'; 
+              }           
+            ?>
+            </ul>
+            <!--<p class="details">
               <?php echo htmlspecialchars_decode(apply_filters('widget_functions', $instance['functions'])); ?>
-            </p>
+            </p>-->
             <?php endif; ?>
           </div>
           <h6 class="application-message">To apply please send your CV to and cover letter</h6>

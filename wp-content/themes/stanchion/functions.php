@@ -298,6 +298,29 @@ function zerif_widgets_init()
 
 add_action('widgets_init', 'zerif_widgets_init');
 
+
+/* STANCHION FILTERING OF DYNAMIC SIDEBAR EXPERIMENT  -  https://snippets.webaware.com.au/snippets/filtering-the-output-of-wordpress-widgets/ */
+
+/**
+* wrapper function for showing sidebars, so that we can customise widget output
+* @param int|string $index Optional, default is 1. Name or ID of dynamic sidebar.
+* @return bool True, if widget sidebar was found and called. False if not found or not called.
+*/
+function theme_dynamic_sidebar($index = 1) {
+ 
+    // capture output from the widgets
+    ob_start();
+    $result = dynamic_sidebar($index);
+    $out = ob_get_clean();
+ 
+    // finally, output whatever we have left
+    echo $out;
+ 
+    return $result;
+}
+
+
+
 function zerif_slug_fonts_url() {
     $fonts_url = '';
  
@@ -378,7 +401,7 @@ function zerif_scripts()
     /* Knob script */
     wp_enqueue_script('zerif_knob_nav', get_template_directory_uri() . '/js/jquery.knob.js', array("jquery"), '20120206', true);
 
-    /* Smootscroll script */
+    /* Smoothscroll script */
 
     $zerif_disable_smooth_scroll = get_theme_mod('zerif_disable_smooth_scroll');
     if( isset($zerif_disable_smooth_scroll) && ($zerif_disable_smooth_scroll != 1)):

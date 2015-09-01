@@ -66,6 +66,12 @@ Description: This is the job listing widget
 
 		// Widget Backend 
 		public function form( $instance ) {
+      if ( isset( $instance[ 'region' ] ) ) {
+				$region = $instance[ 'region' ];
+			}
+			else {
+				$region = __( 'New region', 'bat_widget_domain' );
+			}
 			if ( isset( $instance[ 'title' ] ) ) {
 				$title = $instance[ 'title' ];
 			}
@@ -86,6 +92,12 @@ Description: This is the job listing widget
 			}
 			// Widget admin form
 			?>
+      <p>
+        <label for=""
+          <?php echo $this->get_field_id( 'region' ); ?>"><?php _e( 'Region:' ); ?>
+        </label>
+        <input class="widefat" id=""<?php echo $this->get_field_id( 'region' ); ?>" name="<?php echo $this->get_field_name( 'region' ); ?>" type="text" value="<?php echo esc_attr( $region ); ?>" />
+      </p>
 			<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
@@ -104,6 +116,7 @@ Description: This is the job listing widget
 		// Updating widget replacing old instances with new
 		public function update( $new_instance, $old_instance ) {
 			$instance = array();
+			$instance['region'] = ( ! empty( $new_instance['region'] ) ) ? strip_tags( $new_instance['region'] ) : '';
 			$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 			$instance['description'] = ( ! empty( $new_instance['description'] ) ) ? strip_tags( $new_instance['description'] ) : '';
 			$instance['link'] = ( ! empty( $new_instance['link'] ) ) ? strip_tags( $new_instance['link'] ) : '';

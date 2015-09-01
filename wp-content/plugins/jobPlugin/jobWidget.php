@@ -45,6 +45,13 @@ Description: This is the job listing widget
 				  </h2>
 				  <?php endif; ?>
 				</div>
+        <div class="member-details">
+          <?php if( !empty($instance['region']) ): ?>
+          <h2 class="region">
+            <?php echo htmlspecialchars_decode(apply_filters('widget_region', $instance['region'])); ?>
+          </h2>
+          <?php endif; ?>
+        </div>
 				<h4>Job Description</h4><br />
 				<?php if( !empty($instance['description']) ): ?>
 					<p class="details">

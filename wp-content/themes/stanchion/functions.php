@@ -306,17 +306,23 @@ add_action('widgets_init', 'zerif_widgets_init');
 * @param int|string $index Optional, default is 1. Name or ID of dynamic sidebar.
 * @return bool True, if widget sidebar was found and called. False if not found or not called.
 */
-function theme_dynamic_sidebar($index = 1) {
+function theme_dynamic_sidebar($index = 1, $regionFilter) {
  
     // capture output from the widgets
     ob_start();
     $result = dynamic_sidebar($index);
     $out = ob_get_clean();
  
+    $args = array(
+          'meta_key'   => 'region',
+          'meta_value' => $regionFilter
+          );
+    $regionFilter= new WP_Query( $args );
+    
     // finally, output whatever we have left
     echo $out;
  
-    return $result;
+    return $regionFilter;
 }
 
 

@@ -26,7 +26,7 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
       
-      <div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid red;">
+      <!--<div class="col-lg-12 col-md-12 col-sm-12" style="border: 1px solid red;">
 
         <?php 
 		      $args = array(
@@ -38,7 +38,7 @@ get_header(); ?>
             <h5>Hello</h5>
             <?php get_template_part( 'content', 'page-jobs' ); ?>
           <?php endwhile; ?>
-      </div>
+      </div>-->
 
     </main><!-- #main -->
 

@@ -41,7 +41,8 @@
 					echo '</div>';
 
 					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">';
-						theme_dynamic_sidebar( 'sidebar-ourjobs', 'Cape Town' );
+						//theme_dynamic_sidebar( 'sidebar-ourjobs', 'Cape Town' );
+            <h1>HELLO!</h1>
 					echo '</div> ';
 
 				echo '</div>';

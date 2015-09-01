@@ -42,7 +42,7 @@
 
 					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">';
             
-						dynamic_sidebar( 'sidebar-capetownjobs' );
+						dynamic_sidebar( 'sidebar-ourjobs' );
 					echo '</div> ';
 
 				echo '</div>';

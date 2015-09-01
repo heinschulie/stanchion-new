@@ -1834,10 +1834,6 @@ ul.nav > li.current_page_item.current > a:before {
 	border: 10px solid #eb5e00;
 }
 
-.focus-box .teal-border-bottom:before {
-    background: #7CE2CB; 
-}
-
 .focus-box:nth-child(4n+1) .red-border-bottom:before {
 	background: rgb(235,94,0);
 }

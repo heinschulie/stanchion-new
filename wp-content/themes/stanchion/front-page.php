@@ -277,7 +277,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
       <?php 
       
-      /* HOW WE THINK */
+      /* Latest News */
         $zerif_latestnews_show = get_theme_mod('zerif_latestnews_show');
 
         if( isset($zerif_latestnews_show) && $zerif_latestnews_show != 1 ):

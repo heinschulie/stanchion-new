@@ -351,41 +351,6 @@ function zerif_widgets_init()
 add_action('widgets_init', 'zerif_widgets_init');
 
 
-/* STANCHION FILTERING OF DYNAMIC SIDEBAR EXPERIMENT  -  https://snippets.webaware.com.au/snippets/filtering-the-output-of-wordpress-widgets/ */
-
-/**
-* wrapper function for showing sidebars, so that we can customise widget output
-* @param int|string $index Optional, default is 1. Name or ID of dynamic sidebar.
-* @return bool True, if widget sidebar was found and called. False if not found or not called.
-*/
-function theme_dynamic_sidebar($index = 1, $regionFilter) {
- 
-    $args = array(
-          'meta_key'   => 'region',
-          'meta_value' => $regionFilter
-          );
-    $regionFilter= new WP_Query( $args );
- 
-    // capture output from the widgets
-    ob_start();
-    $result = dynamic_sidebar($index);
-    $out = ob_get_clean();
- 
-    
-    // finally, output whatever we have left
-    echo $out;
- 
-    $reduced = array_reduce( dynamic_sidebar($index), function( $carry, $item ) use ( $exclude ) {
-      if ( in_array( $item, $regionFilter ) ) {
-        $carry[ $post ] = $item;
-      }
-
-      return $carry;
-    } );
- 
- 
-    return $regionFilter;
-}
 
 
 
@@ -1305,27 +1270,27 @@ class zerif_team_widget extends WP_Widget
 
 
                         <?php if ( !empty($instance['fb_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['fb_link']); ?>"><i
+                            <li><a href="<?php echo apply_filters('widget_title', $instance['fb_link']); ?>" target="_blank"><i
                                         class="fa fa-facebook"></i></a></li>
                         <?php endif; ?>
 
                         <?php if ( !empty($instance['tw_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['tw_link']); ?>"><i
+                            <li><a href="<?php echo apply_filters('widget_title', $instance['tw_link']); ?>" target="_blank"><i
                                         class="fa fa-twitter"></i></a></li>
                         <?php endif; ?>
 
                         <?php if ( !empty($instance['bh_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['bh_link']); ?>"><i
+                            <li><a href="<?php echo apply_filters('widget_title', $instance['bh_link']); ?>" target="_blank"><i
                                         class="fa fa-behance"></i></a></li>
                         <?php endif; ?>
 
                         <?php if ( !empty($instance['db_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['db_link']); ?>"><i
+                            <li><a href="<?php echo apply_filters('widget_title', $instance['db_link']); ?>" target="_blank"><i
                                         class="fa fa-dribbble"></i></a></li>
                         <?php endif; ?>
 						
-						<?php if ( !empty($instance['ln_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['ln_link']); ?>"><i
+						            <?php if ( !empty($instance['ln_link']) ): ?>
+                            <li><a href="<?php echo apply_filters('widget_title', $instance['ln_link']); ?>" target="_blank"><i
                                         class="fa fa-linkedin"></i></a></li>
                         <?php endif; ?>
 

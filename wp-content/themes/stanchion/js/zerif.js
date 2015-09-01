@@ -170,7 +170,7 @@ jQuery(document).ready(function(){
     var idName  = hash.substring(1);    // get id name
     var alink   = this;                 // this button pressed
     // check if there is a section that had same id as the button pressed
-    if ( jQuery('section [id*=' + idName + ']').length > 0 && jQuery(window).width() >= 751 ){
+    if ((jQuery('section [id*=' + idName + ']').length > 0 || jQuery('h1 [id*=' + idName + ']').length > 0) && jQuery(window).width() >= 751) {
       jQuery('.current').removeClass('current');
       jQuery(alink).parent('li').addClass('current');
     }else{

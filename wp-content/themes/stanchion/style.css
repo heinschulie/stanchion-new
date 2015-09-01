@@ -525,6 +525,17 @@ thead th{
 	bottom: -9px;
 	left: 12.5%;
 }
+.teal-border-bottom:before {
+	position: absolute;
+	margin: auto;
+	z-index: 1;
+	content: "";
+	width: 75%;
+	height: 2px;
+	background: #7CE2CB;
+	bottom: -9px;
+	left: 12.5%;
+}
 .yellow-border-bottom:before {
 	position: absolute;
 	margin: auto;
@@ -1822,6 +1833,11 @@ ul.nav > li.current_page_item.current > a:before {
 .focus-box:nth-child(4n+4) .service-icon:hover{
 	border: 10px solid #eb5e00;
 }
+
+.focus-box .teal-border-bottom:before {
+    background: #7CE2CB; 
+}
+
 .focus-box:nth-child(4n+1) .red-border-bottom:before {
 	background: rgb(235,94,0);
 }

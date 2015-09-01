@@ -309,9 +309,9 @@ add_action('widgets_init', 'zerif_widgets_init');
 function theme_dynamic_sidebar($index = 1, $regionFilter) {
  
     // capture output from the widgets
-    ob_start();
+    //ob_start();
     $result = dynamic_sidebar($index);
-    $out = ob_get_clean();
+    //$out = ob_get_clean();
  
     $args = array(
           'meta_key'   => 'region',
@@ -320,7 +320,7 @@ function theme_dynamic_sidebar($index = 1, $regionFilter) {
     $regionFilter= new WP_Query( $args );
     
     // finally, output whatever we have left
-    echo $out;
+    //echo $out;
  
     return $regionFilter;
 }

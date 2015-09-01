@@ -1,6 +1,6 @@
 
-<section class="about-us" >
-  <section id="aboutus" style="position: relative; height: 10px; width: 100%;"></section>
+<section id="aboutus" class="about-us" >
+  <!--<section  style="position: relative; height: 10px; width: 100%;"></section>-->
 	<div class="container">
 
 		<!-- SECTION HEADER -->

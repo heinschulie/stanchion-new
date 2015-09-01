@@ -1,7 +1,6 @@
 
 <section class="about-us" >
-  <section id="aboutus" style="position: relative; width: 100%;">
-    
+  <section id="aboutus" style="position: relative; height: 100px; width: 100%;"></section>
 	<div class="container">
 
 		<!-- SECTION HEADER -->
@@ -126,5 +125,5 @@
 
 </div> <!-- / END CONTAINER -->
 
-  </section>
+
 </section> <!-- END ABOUT US SECTION -->

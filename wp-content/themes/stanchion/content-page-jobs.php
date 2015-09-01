@@ -12,8 +12,6 @@
 
 ?>
 
-
-
 <?php
 
 			echo '<section class="our-team stanchion-team" id="team">';
@@ -40,11 +38,13 @@
 
 					echo '</div>';
 
-					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">';
-            
+					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">';           
 						dynamic_sidebar( 'sidebar-ourjobs' );
 					echo '</div> ';
-
+          
+          echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s" style="border: 1px solid red">';           
+						dynamic_sidebar( 'sidebar-capetownjobs' );
+					echo '</div> ';
 				echo '</div>';
 
 			echo '</section>';

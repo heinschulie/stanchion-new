@@ -259,6 +259,55 @@ function zerif_widgets_init()
 
     ));
     
+    register_sidebar(array(
+
+        'name' => __('Cape Town section', 'zerif-lite'),
+
+        'id' => 'sidebar-capetownjobs',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
+    
+    register_sidebar(array(
+
+        'name' => __('Dubai jobs section', 'zerif-lite'),
+
+        'id' => 'sidebar-dubaijobs',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
+    
+    
+    register_sidebar(array(
+
+        'name' => __('London jobs section', 'zerif-lite'),
+
+        'id' => 'sidebar-londonjobs',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
+    
     /* STANCHION !!!!! */
     
     
@@ -294,6 +343,9 @@ function zerif_widgets_init()
 
     ));
     
+    
+    
+    
 }
 
 add_action('widgets_init', 'zerif_widgets_init');
@@ -308,19 +360,29 @@ add_action('widgets_init', 'zerif_widgets_init');
 */
 function theme_dynamic_sidebar($index = 1, $regionFilter) {
  
-    // capture output from the widgets
-    //ob_start();
-    $result = dynamic_sidebar($index);
-    //$out = ob_get_clean();
- 
     $args = array(
           'meta_key'   => 'region',
           'meta_value' => $regionFilter
           );
     $regionFilter= new WP_Query( $args );
+ 
+    // capture output from the widgets
+    ob_start();
+    $result = dynamic_sidebar($index);
+    $out = ob_get_clean();
+ 
     
     // finally, output whatever we have left
-    //echo $out;
+    echo $out;
+ 
+    $reduced = array_reduce( dynamic_sidebar($index), function( $carry, $item ) use ( $exclude ) {
+      if ( in_array( $item, $regionFilter ) ) {
+        $carry[ $post ] = $item;
+      }
+
+      return $carry;
+    } );
+ 
  
     return $regionFilter;
 }

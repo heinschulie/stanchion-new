@@ -5074,7 +5074,7 @@ p.stanchion-bodycopy {
     cursor: pointer;
 }
 .whatwedobox-inner:hover{
-    background-color: orange; 
+    background-color: rgba(235, 94, 0, 0.6); 
 }
 .whatwedobox-inner h4{
     color: rgb(235, 94, 0); 

@@ -39,17 +39,17 @@
 					echo '</div>';
 
 					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">'; 
-            echo '<h2>Cape Town</h2>';
+            echo '<h5 class="stanchion-header">Cape Town</h5>';
 						dynamic_sidebar( 'sidebar-capetownjobs' );
 					echo '</div> ';
           
           echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">'; 
-            echo '<h2>London</h2>';
+            echo '<h5 class="stanchion-header">London</h5>';
 						dynamic_sidebar( 'sidebar-londonjobs' );
 					echo '</div> ';
           
           echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">'; 
-            echo '<h2>Dubai</h2>';
+            echo '<h5 class="stanchion-header">Dubai</h5>';
 						dynamic_sidebar( 'sidebar-dubaijobs' );
 					echo '</div> ';
           

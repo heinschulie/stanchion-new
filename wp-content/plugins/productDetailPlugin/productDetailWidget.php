@@ -148,7 +148,7 @@ Description: Product plugin for Batstone
           <input class="widefat" id=""<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" type="text" value="<?php echo esc_attr( $description ); ?>" />
         </p>
 
-        <!--<p>
+        <p>
 
           <label for="<?php echo $this->get_field_id('image_uri'); ?>"><?php _e('Image', 'zerif-lite'); ?></label><br/>
 
@@ -164,7 +164,7 @@ Description: Product plugin for Batstone
 
           <input type="button" class="button button-primary custom_media_button_team" id="custom_media_button_clients" name="<?php echo $this->get_field_name('image_uri'); ?>" value="<?php _e('Upload Image','zerif-lite'); ?>" style="margin-top:5px;"/>
 
-      </p>-->
+      </p>
         
         
 			<?php 
@@ -177,7 +177,7 @@ Description: Product plugin for Batstone
 			  $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 			  $instance['description'] = ( ! empty( $new_instance['description'] ) ) ? strip_tags( $new_instance['description'] ) : '';
         
-        // $instance['image_uri'] =   ( ! empty( $new_instance['image_uri'] ) ) ? strip_tags($new_instance['image_uri']);
+       // $instance['image_uri'] =   ( ! empty( $new_instance['image_uri'] ) ) ? strip_tags($new_instance['image_uri']);
         
 			  return $instance;
 		  }

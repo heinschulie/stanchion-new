@@ -50,7 +50,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	background: #fff;
     background-size: 100% !important;
-    background-image: url(images/bg-1.jpg);
+    background-image: url(images/bg-2.jpg);
 }
 
 @media screen and (max-width: 414px) {

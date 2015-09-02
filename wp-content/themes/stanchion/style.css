@@ -5007,6 +5007,11 @@ p.stanchion-bodycopy {
     font-size: 14px;
 }
 
+.copy-margin{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
 .stanchion-sidepage-title{
     color: rgb(235,94,0); 
     text-transform: capitalize;
@@ -5204,6 +5209,13 @@ h2.product-section-slogan{
 h4.product-section-description{
     width: 100%;
     text-align: left;
+}
+
+.logo-container{
+    width: 100%;
+}
+img.product-logo{
+    max-width: 25%;
 }
 
 img.product-icon-small{

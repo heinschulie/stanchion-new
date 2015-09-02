@@ -47,11 +47,11 @@ Description: Product plugin for Batstone
         </p>
       <?php endif; ?>
 
-      <!--<?php if( !empty($instance['image_uri']) ): ?>
+      <?php if( !empty($instance['image_uri']) ): ?>
         <figure class="profile-pic">
           <img src="<?php echo esc_url($instance['image_uri']); ?>" alt="">
         </figure>
-      <?php endif; ?>-->
+      <?php endif; ?>
 
       <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />
 

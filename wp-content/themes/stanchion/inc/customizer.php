@@ -1235,38 +1235,6 @@ function zerif_customize_register( $wp_customize ) {
 				'settings' => 'zerif_contactus_secretkey',
 				'priority'    => 8,
 	));
-	
-	/* Google maps section */
-	
-	$wp_customize->add_section( 'zerif_googlemap_section' , array(
-					'title'       => __( 'Google maps section', 'zerif-lite' ),
-					'priority'    => 120
-	));
-	
-	$wp_customize->add_setting(
-        'zerif_googlemap_section', array('sanitize_callback' => 'zerif_sanitize_pro_version')
-	);
-	
-	$wp_customize->add_control( new Zerif_Theme_Support_Googlemap( $wp_customize, 'zerif_googlemap_section',
-	    array(
-	        'section' => 'zerif_googlemap_section',
-	   )
-	));
-	/* Pricing section */
-	$wp_customize->add_section( 'zerif_pricing_section' , array(
-					'title'       => __( 'Pricing section', 'zerif-lite' ),
-					'priority'    => 121
-	));
-	
-	$wp_customize->add_setting(
-        'zerif_pricing_section', array('sanitize_callback' => 'zerif_sanitize_pro_version')
-	);
-	
-	$wp_customize->add_control( new Zerif_Theme_Support_Pricing( $wp_customize, 'zerif_pricing_section',
-	    array(
-	        'section' => 'zerif_pricing_section',
-	   )
-	));
 }
 add_action( 'customize_register', 'zerif_customize_register' );
 /**

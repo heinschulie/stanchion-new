@@ -127,13 +127,7 @@ Description: Product plugin for Batstone
 			  else {
 				  $description = __( 'New description', 'product_widget_domain' );
 			  }
-         
-			  if ( isset( $instance[ 'image_uri' ] ) ) {
-				  $image_uri = $instance[ 'image_uri' ];
-			  }
-			  else {
-				  $image_uri = __( 'New image_uri', 'product_widget_domain' );
-			  }
+        
         
 			  // Widget admin form
 			  ?>

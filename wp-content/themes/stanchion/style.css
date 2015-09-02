@@ -532,7 +532,7 @@ thead th{
 	content: "";
 	width: 75%;
 	height: 2px;
-	background: #7CE2CB;
+	background: rgb(235,94,0);
 	bottom: -9px;
 	left: 12.5%;
 }

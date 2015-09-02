@@ -42,14 +42,14 @@ Description: Product plugin for Batstone
       <?php endif; ?>
 
       <?php if( !empty($instance['description']) ): ?>
-        <p class="stanchion-bodycopy">
+        <p class="stanchion-bodycopy copy-margin">
           <?php echo htmlspecialchars_decode(apply_filters('widget_description', $instance['description'])); ?>
         </p>
       <?php endif; ?>
 
       <?php if( !empty($instance['image_uri']) ): ?>
-        <figure class="profile-pic">
-          <img src="<?php echo esc_url($instance['image_uri']); ?>" alt="">
+        <figure class="logo-container">
+          <img class="product-logo" src="<?php echo esc_url($instance['image_uri']); ?>" alt="">
         </figure>
       <?php endif; ?>
 

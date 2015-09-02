@@ -175,7 +175,7 @@ Description: Product plugin for Batstone
 			  $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 			  $instance['description'] = ( ! empty( $new_instance['description'] ) ) ? strip_tags( $new_instance['description'] ) : '';
         
-       // $instance['image_uri'] =   ( ! empty( $new_instance['image_uri'] ) ) ? strip_tags($new_instance['image_uri']);
+        $instance['image_uri'] =   ( ! empty( $new_instance['image_uri'] ) ) ? strip_tags($new_instance['image_uri']);
         
 			  return $instance;
 		  }

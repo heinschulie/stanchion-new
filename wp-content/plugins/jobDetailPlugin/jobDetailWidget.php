@@ -107,7 +107,7 @@ Description: Plugin for Stanchion
             <?php if( !empty($instance['functions']) ): ?>
             <ul>
             <?php       
-              $myArray = explode('::', $instance['functions']);
+              $myArray = explode('|', $instance['functions']);
               foreach($myArray as $key => $item) {
                   echo '<li>', $item, '</li>'; 
               }           

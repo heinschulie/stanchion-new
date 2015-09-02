@@ -5216,6 +5216,8 @@ h4.product-section-description{
 }
 img.product-logo{
     max-width: 25%;
+    float:left;
+    margin-right: 100%;
 }
 
 img.product-icon-small{

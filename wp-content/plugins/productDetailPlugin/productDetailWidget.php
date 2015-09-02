@@ -47,6 +47,12 @@ Description: Product plugin for Batstone
         </p>
       <?php endif; ?>
 
+      <?php if( !empty($instance['image_uri']) ): ?>
+        <figure class="profile-pic">
+          <img src="<?php echo esc_url($instance['image_uri']); ?>" alt="">
+        </figure>
+      <?php endif; ?>
+
       <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />
 
       <h5 class="product-section-header">WHITE PAPERS</h5>
@@ -136,7 +142,26 @@ Description: Product plugin for Batstone
           <input class="widefat" id=""<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" type="text" value="<?php echo esc_attr( $description ); ?>" />
         </p>
 
-			  <?php 
+        <p>
+
+          <label for="<?php echo $this->get_field_id('image_uri'); ?>"><?php _e('Image', 'zerif-lite'); ?></label><br/>
+
+          <?php
+              if ( !empty($instance['image_uri']) ) :
+                  echo '<img class="custom_media_image_team" src="' . $instance['image_uri'] . '" style="margin:0;padding:0;max-width:100px;float:left;display:inline-block" /><br />';
+              endif;
+           ?>
+
+
+
+          <input type="text" class="widefat custom_media_url_team" name="<?php echo $this->get_field_name('image_uri'); ?>"id="<?php echo $this->get_field_id('image_uri'); ?>" value="<?php if( !empty($instance['image_uri']) ): echo $instance['image_uri']; endif; ?>" style="margin-top:5px;">
+
+          <input type="button" class="button button-primary custom_media_button_team" id="custom_media_button_clients" name="<?php echo $this->get_field_name('image_uri'); ?>" value="<?php _e('Upload Image','zerif-lite'); ?>" style="margin-top:5px;"/>
+
+      </p>
+        
+        
+			<?php 
 		  }
 	
 		  // Updating widget replacing old instances with new
@@ -145,7 +170,8 @@ Description: Product plugin for Batstone
 			  $instance = array();
 			  $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 			  $instance['description'] = ( ! empty( $new_instance['description'] ) ) ? strip_tags( $new_instance['description'] ) : '';
-      
+        $instance['image_uri'] =   ( ! empty( $new_instance['image_uri'] ) ) ? strip_tags($new_instance['image_uri']);
+        
 			  return $instance;
 		  }
 	} // Class product_widget ends here

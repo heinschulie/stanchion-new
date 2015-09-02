@@ -47,7 +47,11 @@ Description: Product plugin for Batstone
         </p>
       <?php endif; ?>
 
-      
+      <!--<?php if( !empty($instance['image_uri']) ): ?>
+        <figure class="profile-pic">
+          <img src="<?php echo esc_url($instance['image_uri']); ?>" alt="">
+        </figure>
+      <?php endif; ?>-->
 
       <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />
 
@@ -144,7 +148,7 @@ Description: Product plugin for Batstone
           <input class="widefat" id=""<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" type="text" value="<?php echo esc_attr( $description ); ?>" />
         </p>
 
-        <p>
+        <!--<p>
 
           <label for="<?php echo $this->get_field_id('image_uri'); ?>"><?php _e('Image', 'zerif-lite'); ?></label><br/>
 
@@ -160,7 +164,7 @@ Description: Product plugin for Batstone
 
           <input type="button" class="button button-primary custom_media_button_team" id="custom_media_button_clients" name="<?php echo $this->get_field_name('image_uri'); ?>" value="<?php _e('Upload Image','zerif-lite'); ?>" style="margin-top:5px;"/>
 
-      </p>
+      </p>-->
         
         
 			<?php 

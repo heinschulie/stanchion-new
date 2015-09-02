@@ -5079,7 +5079,7 @@ p.stanchion-bodycopy.copy-margin{
     cursor: pointer;
 }
 .whatwedobox-inner:hover{
-    background-color: rgba(235, 94, 0, 0.6); 
+    background-color: lightgray; 
 }
 .whatwedobox-inner h4{
     color: rgb(235, 94, 0); 

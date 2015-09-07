@@ -20,7 +20,7 @@ get_header();
 				<main id="main" class="site-main" role="main">
 					<?php
 					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-					$wp_query = new WP_Query( array('tag' => 'speed', 'post_type' => 'post', 'showposts' => '8', 'paged' => $paged. ) );
+					$wp_query = new WP_Query( array('post_type' => 'post', 'showposts' => '8', 'paged' => $paged. ) );
 
 					if( $wp_query->have_posts() ):
 					 

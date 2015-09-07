@@ -45,7 +45,7 @@
     <ul class="">
       <?php // Display blog posts on any page @ http://m0n.co/l
 		    $args = array(
-	        'category_name' => 'White Paper, Case Study'
+	        'category_name' => 'White Paper,Case Study'
         );
         $wp_query = new WP_Query();
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>

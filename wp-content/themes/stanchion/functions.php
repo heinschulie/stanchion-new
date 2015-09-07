@@ -277,6 +277,22 @@ function zerif_widgets_init()
     
     register_sidebar(array(
 
+        'name' => __('Johannesburg section', 'zerif-lite'),
+
+        'id' => 'sidebar-johannesburgjobs',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
+    
+    register_sidebar(array(
+
         'name' => __('Dubai jobs section', 'zerif-lite'),
 
         'id' => 'sidebar-dubaijobs',
@@ -343,9 +359,113 @@ function zerif_widgets_init()
 
     ));
     
+    register_sidebar(array(
+
+        'name' => __('Gyrus details section', 'zerif-lite'),
+
+        'id' => 'sidebar-productgyrus',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
     
+    register_sidebar(array(
+
+        'name' => __('Inetco details section', 'zerif-lite'),
+
+        'id' => 'sidebar-productinetco',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
     
-    
+    register_sidebar(array(
+
+        'name' => __('Postilion details section', 'zerif-lite'),
+
+        'id' => 'sidebar-productpostilion',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
+    register_sidebar(array(
+
+        'name' => __('FutureX details section', 'zerif-lite'),
+
+        'id' => 'sidebar-productfuturex',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
+    register_sidebar(array(
+
+        'name' => __('Proxama details section', 'zerif-lite'),
+
+        'id' => 'sidebar-productproxama',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
+    register_sidebar(array(
+
+        'name' => __('Foresight details section', 'zerif-lite'),
+
+        'id' => 'sidebar-productforesight',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
+    register_sidebar(array(
+
+        'name' => __('Development details section', 'zerif-lite'),
+
+        'id' => 'sidebar-productdevelopment',
+
+        'before_widget' => '',
+
+        'after_widget' => '',
+
+        'before_title' => '<h1 class="widget-title">',
+
+        'after_title' => '</h1>',
+
+    ));
 }
 
 add_action('widgets_init', 'zerif_widgets_init');

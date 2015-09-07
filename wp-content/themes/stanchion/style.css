@@ -1,9 +1,9 @@
 /*
 Theme Name: Stanchion!
 Theme URI: http://themeisle.com/themes/zerif-lite/
-Author: Batstone Schulie
+Author: Batstone 
 Author URI: http://themeisle.com
-Description: Stanchion is actually a Zerif-Lite-Child is just an experiment to get to know my way around wordpress! 
+Description: Stanchion is a Zerif-Lite-Child theme customized to fit their corporate requirements.  
 Version: 1.8.2.2
 License: GNU General Public License version 3
 License URI: license.txt
@@ -1902,7 +1902,7 @@ ul.nav > li.current_page_item.current > a:before {
  **   Secction:  Separator one        -----
 -----------------------------------------*/
 .separator-one {
-	background: rgba(235, 94, 0, 0.5);
+	background: rgba(235, 94, 0, 0.8);
 	padding: 55px 0 0 0;
 }
 .separator-one .green-btn {
@@ -5067,6 +5067,11 @@ p.stanchion-bodycopy.copy-margin{
     padding-right: 15px; 
     margin-bottom: 15px;
 }
+
+.whatwedobox-outer:last-child{
+    margin-left: 33.3%;
+}
+
 .whatwedobox-inner{
     border-radius: 15px;
     min-height: 140px; 

@@ -43,6 +43,11 @@
 						dynamic_sidebar( 'sidebar-capetownjobs' );
 					echo '</div> ';
           
+					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">'; 
+            echo '<h5 class="stanchion-header">JOHANNESBURG</h5>';
+						dynamic_sidebar( 'sidebar-johannesburgjobs' );
+					echo '</div> ';
+          
           echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">'; 
             echo '<h5 class="stanchion-header">LONDON</h5>';
 						dynamic_sidebar( 'sidebar-londonjobs' );

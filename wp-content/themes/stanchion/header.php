@@ -141,7 +141,7 @@ endif; ?>
 					<li class="page_item page-item-12"><a href="/#whatwedo">What We Do</a></li>
 					<li class="page_item page-item-12"><a href="/#results">Results</a></li>
 					<li class="page_item page-item-12"><a href="/#clients">Clients</a></li>
-					<li class="page_item page-item-12"><a href="/#howwethink">How We Think</a></li>
+					<!--<li class="page_item page-item-12"><a href="/#howwethink">How We Think</a></li>-->
 					<li class="page_item page-item-12"><a href="/#aboutus">About Us</a></li>	
 					<li class="page_item page-item-12"><a href="/careers/">Careers</a></li>
 					<li class="page_item page-item-12"><a href="/team/">Team</a></li>

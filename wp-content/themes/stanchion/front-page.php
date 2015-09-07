@@ -331,14 +331,17 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
   <section class="howwethink" id="howwethink">
     <div class="section-header separator-one" >
       
-      <?php		    $zerif_ourfocus_title = get_theme_mod('zerif_ourfocus_title',__('HOW WE THINK','zerif-lite'));
+      <?php
+		    $zerif_ourfocus_title = get_theme_mod('zerif_ourfocus_title',__('HOW WE THINK','zerif-lite'));
 		
 		    if( !empty($zerif_ourfocus_title) ):
 			    echo '<h5 class="stanchion-header white-text">'.__($zerif_ourfocus_title,'zerif-lite').'</h5>';
 		    endif;	
 		  ?>
 
-      <?php		    $zerif_ourfocus_subtitle = get_theme_mod('zerif_ourfocus_subtitle',__('Speed. Security. Measurability. Foresight.','zerif-lite'));
+      <?php
+
+		    $zerif_ourfocus_subtitle = get_theme_mod('zerif_ourfocus_subtitle',__('Speed. Security. Measurability. Foresight.','zerif-lite'));
 
 		    if( !empty($zerif_ourfocus_subtitle) ):
 
@@ -347,18 +350,6 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 		    endif;
 
 		  ?>
-
-      <!--<?php
-
-		    $zerif_ourfocus_subtitle = get_theme_mod('zerif_ourfocus_subtitle',__('By giving clients the correct data, and access to Stanchion\'s decades of experience, they can make the right decisions - transforming information into action.','zerif-lite'));
-
-		    if( !empty($zerif_ourfocus_subtitle) ):
-    
-			    echo '<h4 class="stanchion-description white-text" id="stanchion-padding-bottom">'.__($zerif_ourfocus_subtitle,'zerif-lite').'</h4>';
-
-		    endif;
-	    ?>-->
-      
       <?php 
       
       /* HOW WE THINK */
@@ -546,8 +537,8 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
         </div>
         <div class="col-md-6 stanchion-address-block" data-scrollreveal="enter left after 0s over 1s" >
           <div class="col-md-6">
-            <p class="address-header">STANCHION PAYMENT SOLUTIONS AFRICA (PTY) LTD</p>
-            <p>REG.NO. 2011/142194/07</p>
+            <p class="address-header">STANCHION PAYMENT SOLUTIONS PTY JLT</p>
+            <p>LICENSE NO. JLT 68444</p>
             <br />
             <p class="registered-address">REGISTERED ADDRESS</p>
             <p>
@@ -564,8 +555,8 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
         </div>
         <div class="col-md-6 stanchion-address-block" data-scrollreveal="enter left after 0s over 1s" >
           <div class="col-md-6">
-            <p class="address-header">STANCHION PAYMENT SOLUTIONS AFRICA (PTY) LTD</p>
-            <p>REG.NO. 2011/142194/07</p>
+            <p class="address-header">STANCHION PAYMENT SOLUTIONS (UK) LTD</p>
+            <p>REG.NO. 08859544</p>
             <br />
             <p class="registered-address">REGISTERED ADDRESS</p>
             <p>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Blog
+Template Name: Results Content
 */
 
 get_header();

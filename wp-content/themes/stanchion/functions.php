@@ -828,10 +828,9 @@ class zerif_ourfocus extends WP_Widget
         ?>
 
 
+        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
 
-        <a class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s" href="/tag/speed/">
-
-			<?php if( !empty($instance['image_uri']) ): ?>
+			  <?php if( !empty($instance['image_uri']) ): ?>
             <div class="service-icon">
 				
 				<?php if( !empty($instance['link']) ): ?>
@@ -845,23 +844,23 @@ class zerif_ourfocus extends WP_Widget
 				<?php endif; ?>
 
 
-            </div>
-			<?php endif; ?>
+        </div>
+			  <?php endif; ?>
 
-            <h5 class="teal-border-bottom"><?php if( !empty($instance['title']) ): echo apply_filters('widget_title', $instance['title']); endif; ?></h5>
-            <!-- FOCUS HEADING -->
+              <h5 class="teal-border-bottom"><?php if( !empty($instance['title']) ): echo apply_filters('widget_title', $instance['title']); endif; ?></h5>
+              <!-- FOCUS HEADING -->
 
 
-			<?php 
-				if( !empty($instance['text']) ):
+			  <?php 
+				  if( !empty($instance['text']) ):
 				
-					echo '<p>';
-						echo htmlspecialchars_decode(apply_filters('widget_title', $instance['text']));
-					echo '</p>';
-				endif;
-			?>	
+					  echo '<p>';
+						  echo htmlspecialchars_decode(apply_filters('widget_title', $instance['text']));
+					  echo '</p>';
+				  endif;
+			  ?>	
 
-        </a>
+        </div>
 
 
 

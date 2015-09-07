@@ -44,10 +44,8 @@
   <div class="col-md-4 list-item-container">
     <ul class="">
       <?php // Display blog posts on any page @ http://m0n.co/l
-		    $args = array(
-	        'category_name' => 'Case Study', 'White Paper'; 
-        );
-        $wp_query = new WP_Query($args);
+		    
+        $wp_query = new WP_Query('category_name' => 'Case Study,White Paper');
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <li class="blog-list-item">
         <a class="blog-image-link" href=""

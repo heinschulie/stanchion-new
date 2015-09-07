@@ -829,7 +829,7 @@ class zerif_ourfocus extends WP_Widget
 
 
 
-        <div class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s">
+        <a class="col-lg-3 col-sm-3 focus-box" data-scrollreveal="enter left after 0.15s over 1s" href="/tag/speed/">
 
 			<?php if( !empty($instance['image_uri']) ): ?>
             <div class="service-icon">
@@ -861,7 +861,7 @@ class zerif_ourfocus extends WP_Widget
 				endif;
 			?>	
 
-        </div>
+        </a>
 
 
 
@@ -882,7 +882,7 @@ class zerif_ourfocus extends WP_Widget
 
         $instance['title'] = strip_tags($new_instance['title']);
 		
-		$instance['link'] = strip_tags( $new_instance['link'] );
+		    $instance['link'] = strip_tags( $new_instance['link'] );
 
         $instance['image_uri'] = strip_tags($new_instance['image_uri']);
 

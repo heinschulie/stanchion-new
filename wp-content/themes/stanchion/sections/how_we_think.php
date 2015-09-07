@@ -47,7 +47,7 @@
 		    $args = array(
 	        'category_name' => 'White Paper','Case Study'
         );
-        $wp_query = new WP_Query();
+        $wp_query = new WP_Query($args);
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <li class="blog-list-item">
         <a class="blog-image-link" href=""

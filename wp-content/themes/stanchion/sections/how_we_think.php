@@ -3,10 +3,8 @@
   <div class="col-md-6 list-item-container">
     <ul class="blog-unordered-list">
       <?php // Display blog posts on any page @ http://m0n.co/l
-		    $args = array(
-	        'category_name' => 'News'
-        );
-        $wp_query = new WP_Query( $args );
+		    
+        $wp_query = new WP_Query('category_name=White Paper,Case Study');
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <li class="blog-list-item">
         <a class="blog-image-link" href=""
@@ -44,8 +42,8 @@
   <div class="col-md-4 list-item-container">
     <ul class="">
       <?php // Display blog posts on any page @ http://m0n.co/l
-		    
-        $wp_query = new WP_Query('category_name=White Paper,Case Study');
+      
+		    $wp_query = new WP_Query( array('post_type' => 'post', 'posts_per_page' => '3', 'category_name' => 'News') );
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <li class="blog-list-item">
         <a class="blog-image-link" href=""

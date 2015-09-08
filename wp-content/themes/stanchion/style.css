@@ -2997,6 +2997,9 @@ article .posted-on a:hover{
 	font-size: 26px;
 	margin-top: 0;
 	padding-top: 0;
+    font-weight: bolder;
+    color: rgb(99, 90, 87);
+    margin-bottom: 30px;
 }
 .listpost-content-wrap .entry-content {
 	margin-top: 1em;

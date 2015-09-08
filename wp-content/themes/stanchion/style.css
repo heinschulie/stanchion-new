@@ -186,6 +186,7 @@ p {
 }
 b, strong {
 	font-weight: bold;
+    color: rgb(235, 94, 0);
 }
 dfn, cite, em, i {
 	font-style: italic;
@@ -1068,7 +1069,7 @@ a:active {
 .entry-title{
 	position: relative;
 }
-.entry-title:before {
+/*.entry-title:before {
 	position: absolute;
 	margin: auto;
 	z-index: 1;
@@ -1078,7 +1079,7 @@ a:active {
 	background: rgb(235,94,0);
 	bottom: -9px;
 	left: 0;
-}
+}*/
 .entry-meta{
 	margin-top: 10px;
 }
@@ -2993,7 +2994,7 @@ article .posted-on a:hover{
 	min-height: 1px;
 }
 .entry-title{
-	font-size: 20px;
+	font-size: 26px;
 	margin-top: 0;
 	padding-top: 0;
 }

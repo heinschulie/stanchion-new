@@ -5356,14 +5356,14 @@ h2.stanchion-team-title{
 
 /*Job Details Page*/ 
 
-.job-detail .entry-title{
+.stanchion-jobdetail .entry-title{
     font-weight: bolder;
     color: rgb(99, 90, 87);
     margin-bottom: 30px;
     font-size: 26px;
 }
 
-.job-detail .entry-content p strong {
+.stanchion-jobdetail .entry-content p strong {
     text-align: justify;
     font-weight: bolder;
     color: rgb(235, 94, 0);

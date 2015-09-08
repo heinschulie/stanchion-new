@@ -34,7 +34,7 @@
 					echo '</div>';
 
 					echo '<div class="row" data-scrollreveal="enter left after 0s over 0.8s">';
-						dynamic_sidebar( 'sidebar-jobdetail' );
+				  the_content(); 
 					echo '</div> ';
           
 

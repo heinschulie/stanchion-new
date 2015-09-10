@@ -1761,7 +1761,7 @@ function zerif_customizer_custom_css()
 add_action('customize_controls_print_styles', 'zerif_customizer_custom_css');
 
 function zerif_excerpt_more( $more ) {
-	return '<a href="'.get_permalink().'">[...]</a>';
+	return '<a href="'.get_permalink().'"> ...<p style="text-decoration: underline">Read More</p></a>';
 }
 add_filter('excerpt_more', 'zerif_excerpt_more');
 

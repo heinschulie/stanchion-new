@@ -7,8 +7,7 @@
         $wp_query = new WP_Query('category_name=White Paper,Case Study');
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <li class="blog-list-item">
-        <a class="blog-image-link" href=""
-          <?php the_permalink(); ?>" title="Read more">
+        <a class="blog-image-link" href="<?php the_permalink(); ?>" title="Read more">
           <?php 
                   if ($wp_query->current_post == 0) {
                     the_post_thumbnail('large');                   
@@ -30,8 +29,7 @@
                 echo '<h5>';
                   the_title();
                 echo '</h5>';
-              }
-                      
+              }                      
           ?>
           <?php the_excerpt(); ?>
         </div>
@@ -46,9 +44,14 @@
 		    $wp_query = new WP_Query( array('post_type' => 'post', 'posts_per_page' => '3', 'category_name' => 'News') );
 		    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <li class="blog-list-item">
-        <a class="blog-image-link" href=""
-          <?php the_permalink(); ?>" title="Read more">
-          <?php the_post_thumbnail(); ?>
+        <a class="blog-image-link" href="<?php the_permalink(); ?>" title="Read more">         
+          <?php
+            if ( has_post_thumbnail()) {
+              the_post_thumbnail();
+            } else {
+              echo '<img src="http://stanchionpayments.com/wp-content/uploads/2015/09/white-square.jpg" />';
+            }
+          ?>
         </a>
         <div class="col-md-8 post-text">
           <h5>

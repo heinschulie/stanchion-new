@@ -146,8 +146,8 @@ endif; ?>
 					<li class="page_item page-item-12"><a href="/careers/">Careers</a></li>
 					<li class="page_item page-item-12"><a href="/team/">Team</a></li>
 					<li class="page_item page-item-12"><a href="/#contact">Contact</a></li>	
-					<li><a target="_blank" href="'.esc_url(__($zerif_socials_twitter,'zerif-lite')).'"><i class="fa fa-twitter"></i></a></li>	
-					<li><a target="_blank" href="'.esc_url(__($zerif_socials_linkedin,'zerif-lite')).'"><i class="fa fa-linkedin"></i></a></li>				
+					<li><a target="_blank" href="https://twitter.com/StanchionPS"><i class="fa fa-twitter"></i></a></li>	
+					<li><a target="_blank" href="http://www.linkedin.com/company/stanchion-payment-solutions"><i class="fa fa-linkedin"></i></a></li>				
 				</ul>
 				
 				<!-- This is commented out to avoid having page links dynamically added to the nav bar -->

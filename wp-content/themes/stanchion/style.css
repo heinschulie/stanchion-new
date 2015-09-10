@@ -1725,6 +1725,7 @@ ul.nav > li.current_page_item.current > a:before {
 	color: #404040;
 	font-weight: 700;
 	display: block;
+    text-align: center;
 }
 #carousel-homepage-latestnews .item .latestnews-box .latestnews-title a:before {
 	position: absolute;
@@ -4930,7 +4931,7 @@ h3.stanchion-slogan.main-slogan{
     margin-left: 10%;
     line-height: 1.2em;
     color: darkgrey;
-    text-align: justify;
+    text-align: center;
 }
 
 @media screen and (max-width: 414px) {

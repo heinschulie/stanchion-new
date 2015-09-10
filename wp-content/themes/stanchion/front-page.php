@@ -293,8 +293,6 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
   
 <?php
 
-  
-
 	/* WHAT WE DO SECTION */
 
 	$zerif_ourfocus_show = get_theme_mod('zerif_ourfocus_show');
@@ -305,25 +303,16 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 
 	/* RIBBON WITH BOTTOM BUTTON */
-
-
+  
 	include get_template_directory() . "/sections/ribbon_with_bottom_button.php";
-
 
   /* RESULTS SECTION */
 
-	include get_template_directory() . "/sections/our_results.php";
-  
-  
+	include get_template_directory() . "/sections/our_results.php"; 
   
 	/* CLIENTS */
 
-	$zerif_aboutus_show = get_theme_mod('zerif_aboutus_show');
-
-	if( isset($zerif_aboutus_show) && $zerif_aboutus_show != 1 ):
-
-		include get_template_directory() . "/sections/our_clients.php";
-	endif;
+	include get_template_directory() . "/sections/our_clients.php";
   
   ?>
   

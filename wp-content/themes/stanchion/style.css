@@ -5124,6 +5124,12 @@ ul{
         padding-top: 3%;
     }
 
+    .blog-container:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
     .list-item-container{
         position:relative;
         border-right: 1px solid lightgray;

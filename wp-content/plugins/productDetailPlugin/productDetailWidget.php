@@ -82,32 +82,36 @@ Description: Product plugin for Batstone
 
       <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />
 
-      <h5 class="product-section-header">CASE STUDIES</h5>
-
-      <ul class="product-blog-list">
-        <?php // Display blog posts on any page @ http://m0n.co/l
-		          $temp = $wp_query; $wp_query= null;
+      <?php // Display blog posts on any page @ http://m0n.co/l
+      
+      $temp = $wp_query; $wp_query= null;
                     $args = array(
 	                    'tag' => $instance['title'],
 	                    'category_name' => 'Case Study'
                     );
                     $wp_query = new WP_Query( $args );
-		          while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-          <li class="product-blog-list-item">
-            <a href="<?php the_permalink(); ?>" title="Read more">
-              <?php the_post_thumbnail(); ?>
-            </a>
-            <div class="col-md-9 post-text">
-              <h5>
-                <?php the_title(); ?>
-              </h5>
-              <?php the_excerpt(); ?>
-            </div>
-          </li>
-        <?php endwhile; ?>
-      </ul>
-
-			<?php
+      
+      if ( $temp->have_posts() ) :
+        echo '<h5 class="product-section-header">CASE STUDIES</h5>';
+      
+        <ul class="product-blog-list">       		          
+		        while ($wp_query->have_posts()) : $wp_query->the_post(); 
+            echo '<li class="product-blog-list-item">
+              <a href="php the_permalink();" title="Read more">
+                the_post_thumbnail(); 
+              </a>
+              <div class="col-md-9 post-text">
+                <h5>
+                  the_title(); 
+                </h5>
+                the_excerpt(); 
+              </div>
+            </li>';    
+            endwhile;   
+        </ul>
+      endif;
+      ?>
+      <?php
 			  echo $after_widget;
 		  }
 

@@ -56,7 +56,7 @@
 			<?php
 
 
-			$zerif_aboutus_text = get_theme_mod('zerif_aboutus_text','Since 2001, Stanchion has supported the implementation and management of payment environments and card applications for retailers, banks, credit unions, card schemes, payment processors and payment systems around the world. <br><br>Stanchion gives clients the foresight they need, not only to implement and manage new and existing payments systems, but to predict what is happening next. It provides clients with the technology, expertise and support needed to ensure high performance, availability and total system integrity. <br><br>Stanchion has a team of more than 70 specialists, who support clients on six continents from offices in the UK, Middle East and Africa.');
+			$zerif_aboutus_text = get_theme_mod('zerif_aboutus_text','Since 2001, Stanchion has supported the implementation and management of payment environments and card applications for retailers, banks, credit unions, card schemes, payment processors and payment systems around the world. <br><br>Stanchion gives clients the foresight they need, not only to implement and manage new and existing payments systems, but to predict what is happening next. It provides clients with the technology, expertise and support needed to ensure high performance, availability and total system integrity. <br><br>Stanchion has a team of more than 70 specialists, who support clients on six continents from offices in the UK, US, Middle East and Africa.');
 			$zerif_aboutus_feature1_text = get_theme_mod('zerif_aboutus_feature1_text');
 
 			switch (

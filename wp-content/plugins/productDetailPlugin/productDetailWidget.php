@@ -90,9 +90,9 @@ Description: Product plugin for Batstone
                     );
                     $query = new WP_Query( $args );
                     $query->get_posts();
-              if( $query->have_posts() ){
-                echo '<h5 class="product-section-header">CASE STUDIES</h5>';
-              } ?>     
+              if( $query->have_posts() ): ?>
+                <h5 class="product-section-header">CASE STUDIES</h5>
+              <?php endif; ?>     
 
       <ul class="product-blog-list">
         <?php // Display blog posts on any page @ http://m0n.co/l

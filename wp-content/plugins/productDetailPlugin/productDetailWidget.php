@@ -89,7 +89,8 @@ Description: Product plugin for Batstone
 	                    'category_name' => 'Case Study'
                     );
                     $wp_query = new WP_Query( $args );
-		          if ($wp_query->have_posts()) ; ?>
+                    $wp_query->get_posts();
+		          if ($wp_query->have_posts()); ?>
       <h5 class="product-section-header">CASE STUDIES</h5>
 
       <ul class="product-blog-list">

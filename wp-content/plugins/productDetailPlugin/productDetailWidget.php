@@ -82,8 +82,17 @@ Description: Product plugin for Batstone
 
       <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />
 
-      <h5 class="product-section-header">CASE STUDIES</h5>
-
+      <?php // Display blog posts on any page @ http://m0n.co/l
+		          $temp = $wp_query; $wp_query= null;
+                    $args = array(
+	                    'tag' => $instance['title'],
+	                    'category_name' => 'Case Study'
+                    );
+                    $wp_query = new WP_Query( $args );
+		          if ($wp_query->have_posts()) ; ?>
+                <h5 class="product-section-header">CASE STUDIES</h5>
+              <?php endif; ?>
+        
       <ul class="product-blog-list">
         <?php // Display blog posts on any page @ http://m0n.co/l
 		          $temp = $wp_query; $wp_query= null;

@@ -82,20 +82,17 @@ Description: Product plugin for Batstone
 
       <img class="product-icon-small" src="<?php bloginfo('template_url'); ?>/images/stanchion/productsicon2.png" alt="Icon" />
 
-      <?php // Display blog posts on any page @ http://m0n.co/l
+      <h5 class="product-section-header">CASE STUDIES</h5>
+
+      <ul class="product-blog-list">
+        <?php // Display blog posts on any page @ http://m0n.co/l
 		          $temp = $wp_query; $wp_query= null;
                     $args = array(
 	                    'tag' => $instance['title'],
 	                    'category_name' => 'Case Study'
                     );
                     $wp_query = new WP_Query( $args );
-                    $wp_query->get_posts();
-		          if ($wp_query->have_posts()): ?>
-                <h5 class="product-section-header">CASE STUDIES</h5>
-              <?php endif; ?>
-
-      <ul class="product-blog-list">
-        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+		          while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
           <li class="product-blog-list-item">
             <a href="<?php the_permalink(); ?>" title="Read more">
               <?php the_post_thumbnail(); ?>
@@ -109,7 +106,7 @@ Description: Product plugin for Batstone
           </li>
         <?php endwhile; ?>
       </ul>
-      <?php endif; ?>
+
 			<?php
 			  echo $after_widget;
 		  }
